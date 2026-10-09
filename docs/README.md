@@ -23,4 +23,4 @@ SchemaForge로 MS SQL Server 개체에 한글명과 설명을 달고, 정의서�
 > 저장하면 바로 그 DB의 `MS_Description` 확장 속성이 바뀐다. 처음에는 개발·테스트용 DB로
 > 연습할 것.
 
-이 설명서는 1.0.0 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
+이 설명서는 1.1.1 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
