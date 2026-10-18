@@ -9,7 +9,7 @@ SchemaForge로 MS SQL Server 개체에 한글명과 설명을 달고, 정의서�
 | [2. 코멘트 달기](comments.md) | 한글명·설명 입력, 미작성·변경만 보기, 저장과 저장 로그, 저장 충돌, 행 되돌리기, Excel 붙여넣기, 같은 이름 컬럼 맞추기, 저장 이력, 작성률, 한글명 제안, 찾아 바꾸기·설명 편집, 다른 DB와 비교, 변경분 스크립트 |
 | [3. 파일로 주고받기](import-export.md) | CSV·Excel 내보내기(보이는 행만 포함)와 가져오기, 엑셀 정의서 만들기 |
 | [4. SQL 편집기](sql-editor.md) | 열기, 실행과 예상 규모, 결과 보기·다루기·저장, 편집 기능, 개체와 코멘트 연결, 쿼리 파일과 지난 탭 |
-| [5. 설정과 단축키](settings-shortcuts.md) | 설정 창, Windows·macOS 단축키 표 |
+| [5. 설정과 단축키](settings-shortcuts.md) | 설정 창(테마, 화면·코드 글꼴과 글자 크기 등), Windows·macOS 단축키 표 |
 | [6. 문제 해결](troubleshooting.md) | 자주 겪는 문제, 업데이트, 데이터 저장 위치, 오류 로그, 문의 |
 
 ## 5분 만에 써 보기
@@ -23,4 +23,4 @@ SchemaForge로 MS SQL Server 개체에 한글명과 설명을 달고, 정의서�
 > 저장하면 바로 그 DB의 `MS_Description` 확장 속성이 바뀐다. 처음에는 개발·테스트용 DB로
 > 연습할 것.
 
-이 설명서는 1.3.0 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
+이 설명서는 1.4.0 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
