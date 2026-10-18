@@ -17,10 +17,10 @@ SchemaForge로 MS SQL Server 개체에 한글명과 설명을 달고, 정의서�
 1. [최신 릴리스](https://github.com/almyeonseo/SchemaForge-releases/releases/latest)에서 OS에 맞는 파일을 받아 설치한다.
 2. 앱을 켜고 시작 페이지의 **새 DB 연결**을 눌러 서버를 등록한다.
 3. 왼쪽 DB 탐색기에서 연결, 그 아래 DB, `테이블` 폴더를 차례로 더블클릭해 펼친다.
-4. 테이블 하나를 더블클릭하고, 컬럼의 `한글명` 칸을 두 번 클릭해 입력한다.
+4. 테이블 하나를 더블클릭하고 컬럼의 `한글명` 칸을 두 번 클릭해 입력한다.
 5. Windows `Ctrl+S` / macOS `Cmd+S`로 저장한다. 바꾼 값은 아래 출력 창에 이전 값→새 값으로 남는다.
 
 > 저장하면 바로 그 DB의 `MS_Description` 확장 속성이 바뀐다. 처음에는 개발·테스트용 DB로
 > 연습할 것.
 
-이 설명서는 1.4.0 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
+이 설명서는 1.4.1 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
