@@ -276,6 +276,8 @@ MariaDB 12.0 이상에 연결한다. 코멘트는 SQL Server와 같은 `한글�
 
 연결 대화상자의 **DB 종류**에서 `MariaDB`를 고르면 다음이 바뀐다.
 
+![MariaDB를 고른 연결 대화상자 — 포트가 3306이 되고 Windows 통합 인증 칸이 없다](../images/connection-dialog-mariadb.png)
+
 | 칸 | MariaDB에서 |
 |---|---|
 | 연결 프로필 이름 | 기본 이름 그대로면 `New MariaDB`가 된다. 직접 적은 이름은 그대로다 |
