@@ -1,6 +1,6 @@
 # SchemaForge 사용 설명서
 
-SchemaForge로 MS SQL Server·MariaDB 개체에 한글명과 설명을 달고, 정의서를 뽑고, SQL을 실행하는 방법을
+SchemaForge로 MS SQL Server·MariaDB 개체에 한글명과 설명을 달고 정의서를 뽑고 SQL을 실행하는 방법을
 하려는 일 순서로 정리했다. 처음이면 1장부터 읽는다. 앱에서는 **도움말 > 사용 설명서**로 이 페이지를 연다.
 
 | 장 | 내용 |
