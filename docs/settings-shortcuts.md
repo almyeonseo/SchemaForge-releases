@@ -55,6 +55,7 @@ macOS에서는 대개 `Ctrl` 자리를 `Cmd`로 누른다. 다른 점은 아래 
 | SQL 편집기 탭에서는 실행, DB 탐색기 안에서는 연결 프로필 새로고침 | `F5` | `F5` |
 | SQL 실행 — DB 탐색기에 포커스가 있어도 실행 | `Ctrl+Enter` | `Cmd+Enter` |
 | 커서가 있는 일괄 처리(`GO` 줄 사이)만 실행 | `Ctrl+Shift+Enter` | `Cmd+Shift+Enter` |
+| 예상 규모 확인 — 실행 계획만 묻고 실행하지 않는다([4.3](sql-editor.md#43-예상-규모-줄)) | `Ctrl+L` | `Cmd+L` |
 | SQL 실행 중단 — 변경은 되돌려진다 | `Ctrl+.` | `Cmd+.` |
 | SQL 편집기의 결과 창 숨기기·펼치기 | `Ctrl+R` | `Cmd+R` |
 | 한글명이 비어 있는 다음 / 이전 항목 (코멘트 문서) | `F8` / `Shift+F8` | `F8` / `Shift+F8` |
