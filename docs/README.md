@@ -21,6 +21,6 @@ SchemaForge로 MS SQL Server·MariaDB 개체에 이름과 설명을 달고 정�
 5. Windows `Ctrl+S` / macOS `Cmd+S`로 저장한다. 바꾼 값은 아래 출력 창에 이전 값→새 값으로 남는다.
 
 > 저장하면 바로 그 DB의 `MS_Description` 확장 속성(MariaDB는 개체의 `COMMENT`)이 바뀐다. 처음에는 개발·테스트용 DB로
-> 연습할 것.
+> 연습하는 것이 좋다.
 
 이 설명서는 1.11.0 기준이다. 화면이 설명과 다르면 [Issues](https://github.com/almyeonseo/SchemaForge-releases/issues)에 알려 주면 고친다.
