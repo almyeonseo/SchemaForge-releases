@@ -2,7 +2,7 @@
 
 [목차](README.md) · 이전: [1. 시작하기](getting-started.md) · 다음: [3. 파일로 주고받기](import-export.md)
 
-이 장은 SchemaForge 1.12.0 기준이다. MariaDB 연결에서 달라지는 점은 [1.5 MariaDB 연결](getting-started.md#15-mariadb-연결)에 모아 두었다.
+이 장은 SchemaForge 1.12.1 기준이다. MariaDB 연결에서 달라지는 점은 [1.5 MariaDB 연결](getting-started.md#15-mariadb-연결)에 모아 두었다.
 
 - [2.1 코멘트는 어디에 저장되나](#21-코멘트는-어디에-저장되나)
 - [2.2 편집 화면 열기](#22-편집-화면-열기)
