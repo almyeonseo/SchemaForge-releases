@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 값 입력과 보기
 
-[목차](README.md) · 이전: [2. 편집 화면](comments-screen.md) · 다음: [2. 저장과 되돌리기](comments-save.md)
+[목차](README.md) · 이전: [2. 편집 화면](comments-screen.md) · 다음: [2. 저장과 충돌](comments-save.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -11,10 +11,11 @@
 - **값 입력과 보기**
   - [2.3 값 입력하기](#23-값-입력하기)
   - [2.4 채울 곳만 보기](#24-채울-곳만-보기)
-- **저장과 되돌리기** ([comments-save.md](comments-save.md))
+- **저장과 충돌** ([comments-save.md](comments-save.md))
   - [2.5 저장하기](comments-save.md#25-저장하기)
   - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
-  - [2.7 행 되돌리기](comments-save.md#27-행-되돌리기)
+- **행 되돌리기** ([comments-revert.md](comments-revert.md))
+  - [2.7 행 되돌리기](comments-revert.md#27-행-되돌리기)
 - **붙여넣기와 이름 제안** ([comments-fill.md](comments-fill.md))
   - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
   - [2.9 이름 제안으로 채우기](comments-fill.md#29-이름-제안으로-채우기)
@@ -47,7 +48,7 @@
 - 탭 제목 앞에 `●`가 붙는다.
 - 메인 툴바의 **모두 저장** 버튼에 변경이 남은 문서 수가 붙는다. 예: `모두 저장 (2)`
 
-값을 원래대로 고치면 표시도 사라진다. 한 번에 원래 값으로 돌리려면 [2.7절](comments-save.md#27-행-되돌리기)의 행 되돌리기를 쓴다.
+값을 원래대로 고치면 표시도 사라진다. 한 번에 원래 값으로 돌리려면 [2.7절](comments-revert.md#27-행-되돌리기)의 행 되돌리기를 쓴다.
 
 ### 지킬 것
 
@@ -84,6 +85,6 @@
 ### 저장 전에 바뀐 것만 확인하기
 
 1. 툴바의 `변경만`을 켠다. 고친 행만 남는다.
-2. 행마다 이름·설명을 훑어본다. 잘못 고친 행은 오른쪽 클릭 > `원래 값으로 되돌리기`로 되돌린다([2.7절](comments-save.md#27-행-되돌리기)).
+2. 행마다 이름·설명을 훑어본다. 잘못 고친 행은 오른쪽 클릭 > `원래 값으로 되돌리기`로 되돌린다([2.7절](comments-revert.md#27-행-되돌리기)).
 3. `저장`을 누른다.
 4. `변경만`을 다시 눌러 끄면 전체 목록으로 돌아온다.

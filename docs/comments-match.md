@@ -11,10 +11,11 @@
 - **값 입력과 보기** ([comments-input.md](comments-input.md))
   - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
   - [2.4 채울 곳만 보기](comments-input.md#24-채울-곳만-보기)
-- **저장과 되돌리기** ([comments-save.md](comments-save.md))
+- **저장과 충돌** ([comments-save.md](comments-save.md))
   - [2.5 저장하기](comments-save.md#25-저장하기)
   - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
-  - [2.7 행 되돌리기](comments-save.md#27-행-되돌리기)
+- **행 되돌리기** ([comments-revert.md](comments-revert.md))
+  - [2.7 행 되돌리기](comments-revert.md#27-행-되돌리기)
 - **붙여넣기와 이름 제안** ([comments-fill.md](comments-fill.md))
   - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
   - [2.9 이름 제안으로 채우기](comments-fill.md#29-이름-제안으로-채우기)
@@ -82,7 +83,7 @@
 
 - 영문 약어(`ID`·`Id`)를 뜻하지 않게 바꾸지 않도록 대소문자를 가린다.
 - 바꾸면 이름에 `§`가 생기거나 길이 한도를 넘는 행은 바꾸지 않고 사유별로 알린다.
-- 잘못 바꾼 행은 [행 되돌리기](comments-save.md#27-행-되돌리기)로 되돌린다.
+- 잘못 바꾼 행은 [행 되돌리기](comments-revert.md#27-행-되돌리기)로 되돌린다.
 
 ### 설명 편집
 

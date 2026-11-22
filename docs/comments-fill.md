@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 붙여넣기와 이름 제안
 
-[목차](README.md) · 이전: [2. 저장과 되돌리기](comments-save.md) · 다음: [2. 이름 맞추기와 찾아 바꾸기](comments-match.md)
+[목차](README.md) · 이전: [2. 행 되돌리기](comments-revert.md) · 다음: [2. 이름 맞추기와 찾아 바꾸기](comments-match.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -11,10 +11,11 @@
 - **값 입력과 보기** ([comments-input.md](comments-input.md))
   - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
   - [2.4 채울 곳만 보기](comments-input.md#24-채울-곳만-보기)
-- **저장과 되돌리기** ([comments-save.md](comments-save.md))
+- **저장과 충돌** ([comments-save.md](comments-save.md))
   - [2.5 저장하기](comments-save.md#25-저장하기)
   - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
-  - [2.7 행 되돌리기](comments-save.md#27-행-되돌리기)
+- **행 되돌리기** ([comments-revert.md](comments-revert.md))
+  - [2.7 행 되돌리기](comments-revert.md#27-행-되돌리기)
 - **붙여넣기와 이름 제안**
   - [2.8 Excel에서 붙여넣기](#28-excel에서-붙여넣기)
   - [2.9 이름 제안으로 채우기](#29-이름-제안으로-채우기)
@@ -40,7 +41,7 @@ Excel에서 복사한 이름(과 설명) 열을 코멘트 그리드에 한 번�
 2. SchemaForge 그리드에서 **넣기 시작할 행의 칸**을 한 번 클릭해 고른다. 입력 상태로 들어가지 않는다.
 3. `Ctrl+V`(macOS는 `Cmd+V`)를 누르거나, 오른쪽 클릭 > `붙여넣기`.
 4. 값이 들어간 행에 `변경` 체크가 생기고, 상태줄에 `N개 행에 붙여넣었습니다. 저장해야 DB에 반영됩니다.`가 뜬다.
-5. 확인한 뒤 `저장`을 누른다. 잘못 들어간 행은 [행 되돌리기](comments-save.md#27-행-되돌리기)로 되돌린다.
+5. 확인한 뒤 `저장`을 누른다. 잘못 들어간 행은 [행 되돌리기](comments-revert.md#27-행-되돌리기)로 되돌린다.
 
 ### 예: 두 열(이름·설명)을 붙여넣기
 
@@ -91,7 +92,7 @@ A1:B3을 복사하고, 테이블 문서 컬럼 탭에서 `ORDER_NO` 행의 `이�
 
 1. 제안이 있는 빈 행이 보이면 그리드 위에 `빈 이름 N개에 이름 제안이 있습니다.`와 `제안으로 채우기` 버튼이 나온다.
 2. `제안으로 채우기`를 누르면 **보이는 행 중 이름이 빈 행에만** 제안이 들어간다. 검색·필터로 숨은 행은 바꾸지 않는다.
-3. 들어간 행은 `변경`으로 표시된다. `변경만`을 켜서 확인하고, 아니다 싶은 행은 [되돌린다](comments-save.md#27-행-되돌리기).
+3. 들어간 행은 `변경`으로 표시된다. `변경만`을 켜서 확인하고, 아니다 싶은 행은 [되돌린다](comments-revert.md#27-행-되돌리기).
 4. `저장`을 눌러야 DB에 반영된다.
 
 어떤 값을 제안하나:
