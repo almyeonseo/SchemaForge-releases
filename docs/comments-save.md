@@ -1,14 +1,15 @@
 # 2. 코멘트 달기 — 저장과 되돌리기
 
-[목차](README.md) · 이전: [2. 코멘트 달기](comments.md) · 다음: [2. 여러 행 한꺼번에 채우기](comments-fill.md)
+[목차](README.md) · 이전: [2. 값 입력과 보기](comments-input.md) · 다음: [2. 여러 행 한꺼번에 채우기](comments-fill.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)에 모아 두었다.
 
-- **화면과 입력** ([comments.md](comments.md))
+- **저장 위치와 편집 화면** ([comments.md](comments.md))
   - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
   - [2.2 편집 화면 열기](comments.md#22-편집-화면-열기)
-  - [2.3 값 입력하기](comments.md#23-값-입력하기)
-  - [2.4 채울 곳만 보기](comments.md#24-채울-곳만-보기)
+- **값 입력과 보기** ([comments-input.md](comments-input.md))
+  - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
+  - [2.4 채울 곳만 보기](comments-input.md#24-채울-곳만-보기)
 - **저장과 되돌리기**
   - [2.5 저장하기](#25-저장하기)
   - [2.6 저장 충돌](#26-저장-충돌)
