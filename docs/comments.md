@@ -2,7 +2,7 @@
 
 [목차](README.md) · 이전: [1. 시작하기](getting-started.md) · 다음: [3. 파일로 주고받기](import-export.md)
 
-이 장은 SchemaForge 1.12.1 기준이다. MariaDB 연결에서 달라지는 점은 [1.5 MariaDB 연결](getting-started.md#15-mariadb-연결)에 모아 두었다.
+이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started.md#15-mariadb-연결)~[1.8](getting-started.md#18-oracle-연결)에 모아 두었다.
 
 - [2.1 코멘트는 어디에 저장되나](#21-코멘트는-어디에-저장되나)
 - [2.2 편집 화면 열기](#22-편집-화면-열기)
@@ -23,7 +23,7 @@
 ## 2.1 코멘트는 어디에 저장되나
 
 SchemaForge는 개체마다 **이름**과 **설명**을 받아 코멘트 값 하나에 `§`로 이어 붙여 저장한다.
-저장하는 자리는 DBMS가 원래 코멘트를 두는 곳이다. MS SQL Server는 `MS_Description` 확장 속성이고 MariaDB는 개체의 `COMMENT`다.
+저장하는 자리는 DBMS가 원래 코멘트를 두는 곳이다. MS SQL Server는 `MS_Description` 확장 속성이고 MariaDB·MySQL은 개체의 `COMMENT`, PostgreSQL·Oracle은 `COMMENT ON`이다.
 
 ```
 주문내역§고객이 주문한 상품의 내역을 보관하는 테이블
