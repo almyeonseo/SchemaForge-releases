@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 편집 화면
 
-[목차](README.md) · 이전: [2. 코멘트 달기](comments.md) · 다음: [2. 값 입력과 보기](comments-input.md)
+[목차](README.md) · 이전: [2. 코멘트 달기](comments.md) · 다음: [2. 값 입력](comments-input.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -8,9 +8,10 @@
   - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
 - **편집 화면**
   - [2.2 편집 화면 열기](#22-편집-화면-열기)
-- **값 입력과 보기** ([comments-input.md](comments-input.md))
+- **값 입력** ([comments-input.md](comments-input.md))
   - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
-  - [2.4 채울 곳만 보기](comments-input.md#24-채울-곳만-보기)
+- **채울 곳만 보기** ([comments-filter.md](comments-filter.md))
+  - [2.4 채울 곳만 보기](comments-filter.md#24-채울-곳만-보기)
 - **저장과 충돌** ([comments-save.md](comments-save.md))
   - [2.5 저장하기](comments-save.md#25-저장하기)
   - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
@@ -110,6 +111,6 @@ SQL Server 테이블 문서에는 `제약조건` 탭이 있다. CHECK·DEFAULT·
 | | 스크립트 아이콘(`변경분 스크립트`) | 변경된 항목을 DB에 쓰지 않고 SQL 스크립트 파일로 내보낸다([2.15절](comments-script.md#215-변경분을-sql-스크립트로-내보내기)) |
 | | `내보내기` · `가져오기` | 파일로 주고받는다([3장](import-export.md)) |
 | | `변경 항목: N개` | 저장하지 않은 변경 수 |
-| 오른쪽 | `미작성만` · `변경만` · 검색 칸 | 보이는 행을 거른다([2.4절](comments-input.md#24-채울-곳만-보기)) |
+| 오른쪽 | `미작성만` · `변경만` · 검색 칸 | 보이는 행을 거른다([2.4절](comments-filter.md#24-채울-곳만-보기)) |
 
 맨 아래 상태줄에는 방금 한 일의 결과(불러온 개수, 저장 결과, 붙여넣기 결과 등)가 보인다.
