@@ -1,6 +1,6 @@
 # 3. 파일로 주고받기
 
-[목차](README.md) · 이전: [2. 코멘트 달기](comments.md) · 다음: [4. SQL 편집기](sql-editor.md)
+[목차](README.md) · 이전: [2. 점검·비교·이력](comments-review.md) · 다음: [4. SQL 편집기](sql-editor.md)
 
 파일로 내보내는 기능은 두 가지다. 용도가 다르다.
 
