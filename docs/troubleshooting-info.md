@@ -1,13 +1,15 @@
 # 6. 문제 해결 — 업데이트·데이터·문의
 
-[목차](README.md) · 이전: [6. 저장과 SQL 편집기](troubleshooting-editing.md)
+[목차](README.md) · 이전: [6. SQL 편집기](troubleshooting-sql.md)
 
-- **연결과 DB 탐색기** ([troubleshooting.md](troubleshooting.md))
+- **설치와 연결** ([troubleshooting.md](troubleshooting.md))
   - [6.1 설치와 연결](troubleshooting.md#61-설치와-연결)
-  - [6.2 DB 탐색기](troubleshooting.md#62-db-탐색기)
-- **저장과 SQL 편집기** ([troubleshooting-editing.md](troubleshooting-editing.md))
+- **DB 탐색기** ([troubleshooting-explorer.md](troubleshooting-explorer.md))
+  - [6.2 DB 탐색기](troubleshooting-explorer.md#62-db-탐색기)
+- **코멘트 입력과 저장** ([troubleshooting-editing.md](troubleshooting-editing.md))
   - [6.3 코멘트 입력과 저장](troubleshooting-editing.md#63-코멘트-입력과-저장)
-  - [6.4 SQL 편집기](troubleshooting-editing.md#64-sql-편집기)
+- **SQL 편집기** ([troubleshooting-sql.md](troubleshooting-sql.md))
+  - [6.4 SQL 편집기](troubleshooting-sql.md#64-sql-편집기)
 - **업데이트·데이터·문의**
   - [6.5 업데이트](#65-업데이트)
   - [6.6 데이터 저장 위치](#66-데이터-저장-위치)

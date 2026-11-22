@@ -45,8 +45,10 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [4. Oracle 연결](sql-editor-oracle.md) | Oracle 편집기의 조회 전용, 쓰기 허용, PL/SQL 블록, 결과 칸 |
 | [5. 설정과 단축키](settings-shortcuts.md) | 설정 창(테마, 화면·코드 글꼴과 글자 크기 등) |
 | [5. 단축키](shortcuts.md) | Windows·macOS 단축키 표 |
-| [6. 문제 해결](troubleshooting.md) | 연결·인증서·권한 문제, DB 탐색기 문제 |
-| [6. 저장과 SQL 편집기](troubleshooting-editing.md) | 저장되지 않을 때, 붙여넣기·저장 이력, SQL 편집기 실행 문제 |
+| [6. 문제 해결](troubleshooting.md) | macOS 첫 실행, 연결 테스트의 인증서·TLS·SSL 오류, 빈 루틴 폴더 |
+| [6. DB 탐색기](troubleshooting-explorer.md) | 폴더 불러오기 실패, DB 목록이 안 보일 때, 검색에 개체가 안 나올 때 |
+| [6. 코멘트 입력과 저장](troubleshooting-editing.md) | 저장되지 않을 때, 붙여넣기·저장 이력 |
+| [6. SQL 편집기](troubleshooting-sql.md) | 단축키, 조회 전용 오류, `GO`, 예상 규모 줄, 큰 결과 |
 | [6. 업데이트·데이터·문의](troubleshooting-info.md) | 업데이트, 데이터 저장 위치, 오류 로그, 지원하지 않는 것, 문의 |
 
 ## 5분 만에 써 보기
