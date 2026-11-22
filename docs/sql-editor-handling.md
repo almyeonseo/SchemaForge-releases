@@ -2,7 +2,7 @@
 
 [목차](README.md) · 이전: [4. 결과 보기](sql-editor-results.md) · 다음: [4. 정렬·거르기·열 정리](sql-editor-arrange.md)
 
-이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
+이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](shortcuts.md#52-단축키)에 있다.
 
 - **열기** ([sql-editor.md](sql-editor.md))
   - [4.1 열기](sql-editor.md#41-열기)

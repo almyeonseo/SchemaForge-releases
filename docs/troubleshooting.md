@@ -1,6 +1,6 @@
 # 6. 문제 해결
 
-[목차](README.md) · 이전: [5. 설정과 단축키](settings-shortcuts.md) · 다음: [6. 저장과 SQL 편집기](troubleshooting-editing.md)
+[목차](README.md) · 이전: [5. 단축키](shortcuts.md) · 다음: [6. 저장과 SQL 편집기](troubleshooting-editing.md)
 
 - **연결과 DB 탐색기**
   - [6.1 설치와 연결](#61-설치와-연결)
