@@ -4,10 +4,11 @@
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
-- **열기와 실행** ([sql-editor.md](sql-editor.md))
+- **열기** ([sql-editor.md](sql-editor.md))
   - [4.1 열기](sql-editor.md#41-열기)
-  - [4.2 실행하기](sql-editor.md#42-실행하기)
-  - [4.3 예상 규모 줄](sql-editor.md#43-예상-규모-줄)
+- **실행과 예상 규모** ([sql-editor-run.md](sql-editor-run.md))
+  - [4.2 실행하기](sql-editor-run.md#42-실행하기)
+  - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
 - **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
@@ -30,7 +31,7 @@ MariaDB 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
 ### 기본은 조회만 한다
 
 실행할 때마다 세션을 읽기 전용으로 걸고 SQL을 그대로 보낸다. `INSERT`·`UPDATE`·`DELETE`, `CREATE`·`ALTER`·`DROP` 같은 쓰기는 서버가 거부하고
-메시지 탭에 `조회 전용 연결이라 쓰기·DDL·CALL은 실행하지 않았습니다.`가 보인다. 쓰기가 들어 있는 프로시저를 `CALL`해도 같다. 실행 전 규모 확인은 없다([4.3](sql-editor.md#43-예상-규모-줄)).
+메시지 탭에 `조회 전용 연결이라 쓰기·DDL·CALL은 실행하지 않았습니다.`가 보인다. 쓰기가 들어 있는 프로시저를 `CALL`해도 같다. 실행 전 규모 확인은 없다([4.3](sql-editor-run.md#43-예상-규모-줄)).
 
 ### 쓰기 허용
 

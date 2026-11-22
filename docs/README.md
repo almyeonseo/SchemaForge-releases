@@ -19,7 +19,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [2. 다른 DB·파일과 비교](comments-compare.md) | 다른 DB나 내보낸 파일을 기준으로 다르거나 빈 항목 맞추기 |
 | [2. 이력·스크립트](comments-history.md) | 저장 이력과 이전 값으로 되돌리기, 변경분 스크립트 |
 | [3. 파일로 주고받기](import-export.md) | CSV·Excel 내보내기(보이는 행만 포함)와 가져오기, 엑셀 정의서 만들기 |
-| [4. SQL 편집기](sql-editor.md) | 열기, 실행과 `GO` 일괄 처리, 예상 규모 |
+| [4. SQL 편집기](sql-editor.md) | 편집기 여는 방법, `상위 1000개 행 선택`, 화면 구성 |
+| [4. 실행과 예상 규모](sql-editor-run.md) | 실행, 오류 표시, `GO` 일괄 처리, 예상 규모 줄 |
 | [4. 결과 보기](sql-editor-results.md) | 결과 탭과 `메시지` 탭, 결과 탭 고정 |
 | [4. 결과 다루기와 저장](sql-editor-handling.md) | 셀 고르기·복사·값 보기·정렬·거르기·열 고정·요약, 엑셀·CSV 저장 |
 | [4. 편집 기능](sql-editor-editing.md) | 찾기·바꾸기, 세로 선택, 주석 처리, 책갈피, 코드 접기 등 |

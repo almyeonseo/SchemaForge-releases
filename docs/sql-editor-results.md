@@ -1,13 +1,14 @@
 # 4. SQL 편집기 — 결과 보기
 
-[목차](README.md) · 이전: [4. SQL 편집기](sql-editor.md) · 다음: [4. 결과 다루기와 저장](sql-editor-handling.md)
+[목차](README.md) · 이전: [4. 실행과 예상 규모](sql-editor-run.md) · 다음: [4. 결과 다루기와 저장](sql-editor-handling.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
-- **열기와 실행** ([sql-editor.md](sql-editor.md))
+- **열기** ([sql-editor.md](sql-editor.md))
   - [4.1 열기](sql-editor.md#41-열기)
-  - [4.2 실행하기](sql-editor.md#42-실행하기)
-  - [4.3 예상 규모 줄](sql-editor.md#43-예상-규모-줄)
+- **실행과 예상 규모** ([sql-editor-run.md](sql-editor-run.md))
+  - [4.2 실행하기](sql-editor-run.md#42-실행하기)
+  - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
 - **결과 보기**
   - [4.4 결과 보기](#44-결과-보기)
 - **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
