@@ -1,6 +1,6 @@
 # 4. SQL 편집기 — Oracle 연결
 
-[목차](README.md) · 이전: [4. PostgreSQL 연결](sql-editor-postgresql.md) · 다음: [5. 설정·단축키](settings-shortcuts.md)
+[목차](README.md) · 이전: [4. PostgreSQL 연결](sql-editor-postgresql.md) · 다음: [5. 설정과 단축키](settings-shortcuts.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](shortcuts.md#52-단축키)에 있다.
 
