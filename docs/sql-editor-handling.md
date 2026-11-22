@@ -1,6 +1,6 @@
 # 4. SQL 편집기 — 결과 다루기
 
-[목차](README.md) · 이전: [4. 결과 보기](sql-editor-results.md) · 다음: [4. 정렬·거르기와 결과 저장](sql-editor-arrange.md)
+[목차](README.md) · 이전: [4. 결과 보기](sql-editor-results.md) · 다음: [4. 정렬·거르기·열 정리](sql-editor-arrange.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -14,9 +14,10 @@
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
 - **결과 다루기**
   - [4.5 결과 다루기](#45-결과-다루기)
-- **정렬·거르기와 결과 저장** ([sql-editor-arrange.md](sql-editor-arrange.md))
+- **정렬·거르기·열 정리** ([sql-editor-arrange.md](sql-editor-arrange.md))
   - [4.6 정렬·거르기·열 정리](sql-editor-arrange.md#46-정렬거르기열-정리)
-  - [4.7 결과 저장](sql-editor-arrange.md#47-결과-저장)
+- **결과 저장** ([sql-editor-save.md](sql-editor-save.md))
+  - [4.7 결과 저장](sql-editor-save.md#47-결과-저장)
 - **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
   - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
 - **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
