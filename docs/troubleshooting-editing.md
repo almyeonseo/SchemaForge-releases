@@ -10,12 +10,16 @@
   - [6.3 코멘트 입력과 저장](#63-코멘트-입력과-저장)
 - **SQL 편집기** ([troubleshooting-sql.md](troubleshooting-sql.md))
   - [6.4 SQL 편집기](troubleshooting-sql.md#64-sql-편집기)
-- **업데이트·데이터·문의** ([troubleshooting-info.md](troubleshooting-info.md))
+- **업데이트** ([troubleshooting-info.md](troubleshooting-info.md))
   - [6.5 업데이트](troubleshooting-info.md#65-업데이트)
-  - [6.6 데이터 저장 위치](troubleshooting-info.md#66-데이터-저장-위치)
-  - [6.7 오류 로그](troubleshooting-info.md#67-오류-로그)
-  - [6.8 지원하지 않는 것](troubleshooting-info.md#68-지원하지-않는-것)
-  - [6.9 문의·버그 제보](troubleshooting-info.md#69-문의버그-제보)
+- **데이터 저장 위치** ([troubleshooting-data.md](troubleshooting-data.md))
+  - [6.6 데이터 저장 위치](troubleshooting-data.md#66-데이터-저장-위치)
+- **오류 로그** ([troubleshooting-log.md](troubleshooting-log.md))
+  - [6.7 오류 로그](troubleshooting-log.md#67-오류-로그)
+- **지원하지 않는 것** ([troubleshooting-unsupported.md](troubleshooting-unsupported.md))
+  - [6.8 지원하지 않는 것](troubleshooting-unsupported.md#68-지원하지-않는-것)
+- **문의·버그 제보** ([troubleshooting-contact.md](troubleshooting-contact.md))
+  - [6.9 문의·버그 제보](troubleshooting-contact.md#69-문의버그-제보)
 
 ## 6.3 코멘트 입력과 저장
 

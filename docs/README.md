@@ -10,8 +10,10 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [1. DB 연결 만들기](getting-started-connect.md) | 연결 창 입력, 연결 고치기와 지우기 |
 | [1. DB 탐색기](getting-started-explorer.md) | 트리 구조, 펼치기와 열기, 탐색기 툴바, 우클릭 메뉴 |
 | [1. 연결 정리와 검색](getting-started-search.md) | 연결 순서 바꾸기, SQL 편집기로 끌어 놓기, 개체·컬럼 검색 |
-| [1. MariaDB·MySQL 연결](getting-started-dbms.md) | MariaDB·MySQL 연결 만들기, 트리, 저장할 수 있는 것, 테이블마다 저장 |
-| [1. PostgreSQL·Oracle 연결](getting-started-postgresql-oracle.md) | PostgreSQL·Oracle 연결 만들기, 트리, 저장 |
+| [1. MariaDB 연결](getting-started-dbms.md) | MariaDB 연결 만들기, 트리, 저장할 수 있는 것, 테이블마다 저장 |
+| [1. MySQL 연결](getting-started-mysql.md) | MySQL 연결 만들기와 MariaDB와 다른 점 |
+| [1. PostgreSQL 연결](getting-started-postgresql-oracle.md) | PostgreSQL 연결 만들기, 트리, 저장 |
+| [1. Oracle 연결](getting-started-oracle.md) | Oracle 연결 만들기, 트리, 저장 |
 | [2. 코멘트 달기](comments.md) | 코멘트가 저장되는 자리와 `이름§설명` 형식, 구분자 바꾸기 |
 | [2. 편집 화면](comments-screen.md) | 분류 목록 문서, 개체 문서(인덱스·제약조건 탭), 툴바 |
 | [2. 값 입력](comments-input.md) | 이름·설명 입력과 지킬 것 |
@@ -49,7 +51,11 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [6. DB 탐색기](troubleshooting-explorer.md) | 폴더 불러오기 실패, DB 목록이 안 보일 때, 검색에 개체가 안 나올 때 |
 | [6. 코멘트 입력과 저장](troubleshooting-editing.md) | 저장되지 않을 때, 붙여넣기·저장 이력 |
 | [6. SQL 편집기](troubleshooting-sql.md) | 단축키, 조회 전용 오류, `GO`, 예상 규모 줄, 큰 결과 |
-| [6. 업데이트·데이터·문의](troubleshooting-info.md) | 업데이트, 데이터 저장 위치, 오류 로그, 지원하지 않는 것, 문의 |
+| [6. 업데이트](troubleshooting-info.md) | 업데이트 확인과 새 버전 설치 |
+| [6. 데이터 저장 위치](troubleshooting-data.md) | 연결 프로필·설정·저장 이력이 남는 폴더 |
+| [6. 오류 로그](troubleshooting-log.md) | 오류 로그 위치와 남는 내용 |
+| [6. 지원하지 않는 것](troubleshooting-unsupported.md) | 이 앱이 하지 않는 일 |
+| [6. 문의·버그 제보](troubleshooting-contact.md) | 문의와 버그 제보 방법 |
 
 ## 5분 만에 써 보기
 

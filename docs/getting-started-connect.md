@@ -12,12 +12,14 @@
   - [1.4 DB 탐색기 쓰기](getting-started-explorer.md#14-db-탐색기-쓰기)
 - **연결 정리와 검색** ([getting-started-search.md](getting-started-search.md))
   - [1.5 연결 정리와 검색](getting-started-search.md#15-연결-정리와-검색)
-- **MariaDB·MySQL 연결** ([getting-started-dbms.md](getting-started-dbms.md))
+- **MariaDB 연결** ([getting-started-dbms.md](getting-started-dbms.md))
   - [1.6 MariaDB 연결](getting-started-dbms.md#16-mariadb-연결)
-  - [1.7 MySQL 연결](getting-started-dbms.md#17-mysql-연결)
-- **PostgreSQL·Oracle 연결** ([getting-started-postgresql-oracle.md](getting-started-postgresql-oracle.md))
+- **MySQL 연결** ([getting-started-mysql.md](getting-started-mysql.md))
+  - [1.7 MySQL 연결](getting-started-mysql.md#17-mysql-연결)
+- **PostgreSQL 연결** ([getting-started-postgresql-oracle.md](getting-started-postgresql-oracle.md))
   - [1.8 PostgreSQL 연결](getting-started-postgresql-oracle.md#18-postgresql-연결)
-  - [1.9 Oracle 연결](getting-started-postgresql-oracle.md#19-oracle-연결)
+- **Oracle 연결** ([getting-started-oracle.md](getting-started-oracle.md))
+  - [1.9 Oracle 연결](getting-started-oracle.md#19-oracle-연결)
 
 ## 1.3 DB 연결 만들기
 
@@ -29,7 +31,7 @@
 | 칸 | 적을 것 |
 |---|---|
 | 연결 프로필 이름 | 트리에 보일 이름. 예: `개발 SalesDB` (필수) |
-| DB 종류 | `Microsoft SQL Server`·`MariaDB`·`MySQL`·`PostgreSQL`·`Oracle`. 고르면 포트와 칸이 바뀐다([1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)). 저장한 연결의 종류는 바꿀 수 없다 |
+| DB 종류 | `Microsoft SQL Server`·`MariaDB`·`MySQL`·`PostgreSQL`·`Oracle`. 고르면 포트와 칸이 바뀐다([1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-oracle.md#19-oracle-연결)). 저장한 연결의 종류는 바꿀 수 없다 |
 | 서버 주소 · 포트 | 예: `dev-sql01`, `1433` (서버 주소 필수) |
 | 기본 데이터베이스 | 주로 쓸 DB 이름. 트리에서 이 DB가 맨 위에 펼쳐진 채로 놓인다. 비워 두면 `master`다. 같은 서버의 다른 DB도 이 연결 하나로 볼 수 있다([1.4](getting-started-explorer.md#14-db-탐색기-쓰기)) |
 | Windows 통합 인증 | 켜면 지금 로그인한 Windows 계정으로 접속한다. 끄면 아래 두 칸이 나온다 |
@@ -45,7 +47,7 @@ MariaDB·MySQL은 `ALTER`(테이블·컬럼)·`ALTER ROUTINE`(프로시저·함�
 `COMMENT ANY TABLE` 권한이다. 읽기 권한만 있으면
 보기와 정의서 내보내기까지만 된다.
 
-비밀번호는 이 PC에 암호화해 저장한다. 보호 수준은 [6.6 데이터 저장 위치](troubleshooting-info.md#66-데이터-저장-위치)를 본다.
+비밀번호는 이 PC에 암호화해 저장한다. 보호 수준은 [6.6 데이터 저장 위치](troubleshooting-data.md#66-데이터-저장-위치)를 본다.
 
 ### 연결 고치기와 지우기
 

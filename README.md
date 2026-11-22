@@ -59,9 +59,9 @@ MariaDB·MySQL은 개체의 `COMMENT`, PostgreSQL·Oracle은 `COMMENT ON`이다.
 - 조회 전용 편집기는 탭의 `쓰기 허용`을 켜면 쓴다. SQL Server만 실행 전에 `규모 확인`으로 예상 영향 규모를 본다.
 - 연결 설정과 필요한 권한은 설명서에 DBMS마다 있다:
   [MariaDB](docs/getting-started-dbms.md#16-mariadb-연결) ·
-  [MySQL](docs/getting-started-dbms.md#17-mysql-연결) ·
+  [MySQL](docs/getting-started-mysql.md#17-mysql-연결) ·
   [PostgreSQL](docs/getting-started-postgresql-oracle.md#18-postgresql-연결) ·
-  [Oracle](docs/getting-started-postgresql-oracle.md#19-oracle-연결)
+  [Oracle](docs/getting-started-oracle.md#19-oracle-연결)
 
 ---
 
