@@ -110,7 +110,7 @@ MariaDB·MySQL은 `ALTER`(테이블·컬럼)·`ALTER ROUTINE`(프로시저·함�
 `COMMENT ANY TABLE` 권한이다. 읽기 권한만 있으면
 보기와 정의서 내보내기까지만 된다.
 
-비밀번호는 이 PC에 암호화해 저장한다. 보호 수준은 [6.3 데이터 저장 위치](troubleshooting.md#63-데이터-저장-위치)를 본다.
+비밀번호는 이 PC에 암호화해 저장한다. 보호 수준은 [6.6 데이터 저장 위치](troubleshooting-info.md#66-데이터-저장-위치)를 본다.
 
 ### 연결 고치기와 지우기
 
