@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 이력·스크립트
 
-[목차](README.md) · 이전: [2. 점검·비교](comments-review.md) · 다음: [3. 파일로 주고받기](import-export.md)
+[목차](README.md) · 이전: [2. 다른 DB·파일과 비교](comments-compare.md) · 다음: [3. 파일로 주고받기](import-export.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)에 모아 두었다.
 
@@ -19,9 +19,10 @@
   - [2.9 이름 제안으로 채우기](comments-fill.md#29-이름-제안으로-채우기)
   - [2.10 같은 컬럼명 이름 맞추기](comments-fill.md#210-같은-컬럼명-이름-맞추기)
   - [2.11 찾아 바꾸기와 설명 편집](comments-fill.md#211-찾아-바꾸기와-설명-편집)
-- **점검·비교** ([comments-review.md](comments-review.md))
+- **작성률** ([comments-review.md](comments-review.md))
   - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
-  - [2.13 다른 DB와 비교해 맞추기](comments-review.md#213-다른-db와-비교해-맞추기)
+- **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))
+  - [2.13 다른 DB와 비교해 맞추기](comments-compare.md#213-다른-db와-비교해-맞추기)
 - **이력·스크립트**
   - [2.14 저장 이력](#214-저장-이력)
   - [2.15 변경분을 SQL 스크립트로 내보내기](#215-변경분을-sql-스크립트로-내보내기)
