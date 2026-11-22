@@ -1,6 +1,6 @@
 # 1. 시작하기 — DBMS별 연결
 
-[목차](README.md) · 이전: [1. DB 탐색기](getting-started-explorer.md) · 다음: [2. 코멘트 달기](comments.md)
+[목차](README.md) · 이전: [1. 연결 정리와 검색](getting-started-search.md) · 다음: [2. 코멘트 달기](comments.md)
 
 - **설치와 연결** ([getting-started.md](getting-started.md))
   - [1.1 설치](getting-started.md#11-설치)
@@ -8,13 +8,15 @@
   - [1.3 DB 연결 만들기](getting-started.md#13-db-연결-만들기)
 - **DB 탐색기** ([getting-started-explorer.md](getting-started-explorer.md))
   - [1.4 DB 탐색기 쓰기](getting-started-explorer.md#14-db-탐색기-쓰기)
+- **연결 정리와 검색** ([getting-started-search.md](getting-started-search.md))
+  - [1.5 연결 정리와 검색](getting-started-search.md#15-연결-정리와-검색)
 - **DBMS별 연결**
-  - [1.5 MariaDB 연결](#15-mariadb-연결)
-  - [1.6 MySQL 연결](#16-mysql-연결)
-  - [1.7 PostgreSQL 연결](#17-postgresql-연결)
-  - [1.8 Oracle 연결](#18-oracle-연결)
+  - [1.6 MariaDB 연결](#16-mariadb-연결)
+  - [1.7 MySQL 연결](#17-mysql-연결)
+  - [1.8 PostgreSQL 연결](#18-postgresql-연결)
+  - [1.9 Oracle 연결](#19-oracle-연결)
 
-## 1.5 MariaDB 연결
+## 1.6 MariaDB 연결
 
 MariaDB 12.0 이상에 연결한다. 코멘트는 SQL Server와 같은 `이름§설명` 형식으로 개체의 `COMMENT`에 저장한다.
 여기 적지 않은 것은 SQL Server 연결과 같다.
@@ -85,9 +87,9 @@ MariaDB는 코멘트를 바꾸는 즉시 반영되어 여러 건을 한꺼번에
 - 컬럼은 정의를 통째로 다시 쓴다. 저장 직전에 정의를 읽어 코멘트만 바꿔 보내고 저장 직후 다시 읽어 맞춰 본다. 다른 곳이 바뀌었으면 그 테이블에서
   멈추고 저장 전후 정의를 보여 준다. 이미 반영되어 되돌리지 못하니 DB 관리자에게 알려 정의를 확인한다.
 
-## 1.6 MySQL 연결
+## 1.7 MySQL 연결
 
-MySQL 8.4에 연결한다. **화면과 동작은 [1.5 MariaDB 연결](#15-mariadb-연결)과 같다.** 폴더, 읽기만 하는 칸, 저장 방식, 조회 전용 SQL 편집기가 모두 같고
+MySQL 8.4에 연결한다. **화면과 동작은 [1.6 MariaDB 연결](#16-mariadb-연결)과 같다.** 폴더, 읽기만 하는 칸, 저장 방식, 조회 전용 SQL 편집기가 모두 같고
 문구의 DBMS 이름만 `MySQL`로 보인다. 다른 점만 적는다.
 
 - **DB 종류**에서 `MySQL`을 고른다. 포트는 `3306`, 기본 이름은 `New MySQL`이 되고 기본 데이터베이스가 필수다.
@@ -98,7 +100,7 @@ MySQL 8.4에 연결한다. **화면과 동작은 [1.5 MariaDB 연결](#15-mariad
   `SUPER` 권한이나 서버 설정 `log_bin_trust_function_creators`가 필요하다. 둘 다 권한이 없다는 안내와 함께 멈춘다.
 - 컬럼 기본값은 MariaDB와 같은 표기(`'일반'`)로 보인다.
 
-## 1.7 PostgreSQL 연결
+## 1.8 PostgreSQL 연결
 
 PostgreSQL 17에 연결한다. 코멘트는 같은 `이름§설명` 형식으로 `COMMENT ON`에 저장한다. 트리와 코멘트 문서는 SQL Server와 같고
 SQL 편집기는 MariaDB처럼 기본으로 조회만 한다([4.11](sql-editor-dbms.md#411-postgresql-연결)).
@@ -132,7 +134,7 @@ SQL 편집기는 MariaDB처럼 기본으로 조회만 한다([4.11](sql-editor-d
 - 소유자가 아니면 `개체 소유자만 코멘트를 바꿀 수 있습니다. 아무것도 반영하지 않았습니다`, 다른 작업이 표를 잡고 있으면 10초 뒤
   `다른 작업이 표를 잠가 10초 안에 저장하지 못했습니다`가 보인다.
 
-## 1.8 Oracle 연결
+## 1.9 Oracle 연결
 
 Oracle 23ai에 서비스 이름(PDB)으로 연결한다. 코멘트는 같은 `이름§설명` 형식으로 `COMMENT ON`에 저장한다.
 
@@ -173,6 +175,6 @@ Oracle 23ai에 서비스 이름(PDB)으로 연결한다. 코멘트는 같은 `�
 | 루틴 문서 | 읽기만 한다 |
 
 - Oracle은 `COMMENT`를 실행하는 순간 반영해 여러 건을 한꺼번에 되돌릴 수 없다. 그래서 **한 건씩 저장하고 실패한 건에서 멈춘다.**
-  결과는 [1.5의 MariaDB 저장](#mariadb-저장)과 같이 `반영 · 실패 · 실행 안 함`으로 나뉘어 보인다.
+  결과는 [1.6의 MariaDB 저장](#mariadb-저장)과 같이 `반영 · 실패 · 실행 안 함`으로 나뉘어 보인다.
 - 쓰기 권한이 없으면 첫 건에서 멈추고 `이 계정에는 코멘트를 바꿀 권한이 없습니다.`가 함께 보인다.
 - 길이 한도는 이름과 설명을 합쳐 4,000바이트(DB 문자셋 기준, 한글 약 1,333자)다. 넘으면 저장을 시작하지 않는다.

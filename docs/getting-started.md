@@ -8,11 +8,13 @@
   - [1.3 DB 연결 만들기](#13-db-연결-만들기)
 - **DB 탐색기** ([getting-started-explorer.md](getting-started-explorer.md))
   - [1.4 DB 탐색기 쓰기](getting-started-explorer.md#14-db-탐색기-쓰기)
+- **연결 정리와 검색** ([getting-started-search.md](getting-started-search.md))
+  - [1.5 연결 정리와 검색](getting-started-search.md#15-연결-정리와-검색)
 - **DBMS별 연결** ([getting-started-dbms.md](getting-started-dbms.md))
-  - [1.5 MariaDB 연결](getting-started-dbms.md#15-mariadb-연결)
-  - [1.6 MySQL 연결](getting-started-dbms.md#16-mysql-연결)
-  - [1.7 PostgreSQL 연결](getting-started-dbms.md#17-postgresql-연결)
-  - [1.8 Oracle 연결](getting-started-dbms.md#18-oracle-연결)
+  - [1.6 MariaDB 연결](getting-started-dbms.md#16-mariadb-연결)
+  - [1.7 MySQL 연결](getting-started-dbms.md#17-mysql-연결)
+  - [1.8 PostgreSQL 연결](getting-started-dbms.md#18-postgresql-연결)
+  - [1.9 Oracle 연결](getting-started-dbms.md#19-oracle-연결)
 
 ## 1.1 설치
 
@@ -91,7 +93,7 @@ macOS에서 처음 실행이 막히면 시스템 설정 > 개인정보 보호 �
 | 칸 | 적을 것 |
 |---|---|
 | 연결 프로필 이름 | 트리에 보일 이름. 예: `개발 SalesDB` (필수) |
-| DB 종류 | `Microsoft SQL Server`·`MariaDB`·`MySQL`·`PostgreSQL`·`Oracle`. 고르면 포트와 칸이 바뀐다([1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)). 저장한 연결의 종류는 바꿀 수 없다 |
+| DB 종류 | `Microsoft SQL Server`·`MariaDB`·`MySQL`·`PostgreSQL`·`Oracle`. 고르면 포트와 칸이 바뀐다([1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-dbms.md#19-oracle-연결)). 저장한 연결의 종류는 바꿀 수 없다 |
 | 서버 주소 · 포트 | 예: `dev-sql01`, `1433` (서버 주소 필수) |
 | 기본 데이터베이스 | 주로 쓸 DB 이름. 트리에서 이 DB가 맨 위에 펼쳐진 채로 놓인다. 비워 두면 `master`다. 같은 서버의 다른 DB도 이 연결 하나로 볼 수 있다([1.4](getting-started-explorer.md#14-db-탐색기-쓰기)) |
 | Windows 통합 인증 | 켜면 지금 로그인한 Windows 계정으로 접속한다. 끄면 아래 두 칸이 나온다 |

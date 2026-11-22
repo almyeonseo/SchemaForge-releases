@@ -2,7 +2,7 @@
 
 [목차](README.md) · 이전: [2. 값 입력과 보기](comments-input.md) · 다음: [2. 여러 행 한꺼번에 채우기](comments-fill.md)
 
-이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)에 모아 두었다.
+이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-dbms.md#19-oracle-연결)에 모아 두었다.
 
 - **저장 위치와 편집 화면** ([comments.md](comments.md))
   - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
@@ -34,7 +34,7 @@
 | **저장** `Ctrl+S`(macOS는 `Cmd+S`) — 문서 툴바, 파일 메뉴, 메인 툴바 | 지금 탭의 변경된 항목만 |
 | **모두 저장** `Ctrl+Shift+S`(macOS는 `Cmd+Shift+S`) | 열려 있는 탭 중 변경이 있는 것 전부. DB 전체가 아니다 |
 
-변경된 항목만 하나의 트랜잭션으로 저장한다. 하나가 실패하면 그 문서의 저장은 모두 취소된다(MariaDB는 다르다 — [1.5](getting-started-dbms.md#mariadb-저장)). 저장이
+변경된 항목만 하나의 트랜잭션으로 저장한다. 하나가 실패하면 그 문서의 저장은 모두 취소된다(MariaDB는 다르다 — [1.6](getting-started-dbms.md#mariadb-저장)). 저장이
 끝나면 상태줄에 `성공적으로 N개 코멘트가 저장되었습니다.`가 보이고 DB 탐색기의 이름도 바뀐다. 저장에 실패하면 상태줄 문구가 빨간 글자로
 바뀌고 다른 문구가 들어오면 원래 색으로 돌아온다. `§`나 길이 때문에 저장을 시작하지 않은 안내는 빨갛지 않다.
 

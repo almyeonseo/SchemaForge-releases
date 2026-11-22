@@ -2,7 +2,7 @@
 
 [목차](README.md) · 이전: [2. 코멘트 달기](comments.md) · 다음: [2. 저장과 되돌리기](comments-save.md)
 
-이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)에 모아 두었다.
+이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-dbms.md#19-oracle-연결)에 모아 두었다.
 
 - **저장 위치와 편집 화면** ([comments.md](comments.md))
   - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
@@ -49,7 +49,7 @@
 ### 지킬 것
 
 - **이름에는 `§`(그 연결의 코멘트 구분자)를 넣을 수 없다.** 이름과 설명을 가르는 문자라서다. 설명에는 넣어도 된다.
-- 이름과 설명을 합쳐 **7,500바이트(한글 약 3,750자)**를 넘으면 저장하지 않는다. MariaDB는 한도가 다르고 글자 수로 센다([1.5 MariaDB 연결](getting-started-dbms.md#15-mariadb-연결)).
+- 이름과 설명을 합쳐 **7,500바이트(한글 약 3,750자)**를 넘으면 저장하지 않는다. MariaDB는 한도가 다르고 글자 수로 센다([1.6 MariaDB 연결](getting-started-dbms.md#16-mariadb-연결)).
 - 이름과 설명을 모두 비우고 저장하면 그 개체의 코멘트를 지운다.
 
 위반한 값이 있으면 저장을 시작하지 않고 상태줄에 `저장 취소: …`로 어느 항목이 문제인지 알려 준다. 하나라도 걸리면 아무것도 저장하지 않는다.
