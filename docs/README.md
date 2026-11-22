@@ -14,7 +14,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [2. 편집 화면](comments-screen.md) | 분류 목록 문서, 개체 문서(인덱스·제약조건 탭), 툴바 |
 | [2. 값 입력](comments-input.md) | 이름·설명 입력과 지킬 것 |
 | [2. 채울 곳만 보기](comments-filter.md) | 미작성만·변경만 보기 |
-| [2. 저장과 충돌](comments-save.md) | 저장과 저장 로그, 저장 충돌 |
+| [2. 저장](comments-save.md) | 저장, 저장 로그, 저장하지 않은 편집을 지키는 장치 |
+| [2. 저장 충돌](comments-conflict.md) | 불러온 뒤 다른 사람이 저장했을 때 남길 값 고르기 |
 | [2. 행 되돌리기](comments-revert.md) | 고친 행과 머리글을 불러온 값으로 되돌리기 |
 | [2. Excel에서 붙여넣기](comments-fill.md) | Excel에서 복사한 이름·설명 열을 그리드에 붙여넣기 |
 | [2. 이름 제안](comments-suggest.md) | 같은 컬럼명에 쓰인 이름 제안으로 채우기 |

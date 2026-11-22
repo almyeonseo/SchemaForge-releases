@@ -12,9 +12,10 @@
   - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
 - **채울 곳만 보기** ([comments-filter.md](comments-filter.md))
   - [2.4 채울 곳만 보기](comments-filter.md#24-채울-곳만-보기)
-- **저장과 충돌** ([comments-save.md](comments-save.md))
+- **저장** ([comments-save.md](comments-save.md))
   - [2.5 저장하기](comments-save.md#25-저장하기)
-  - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
+- **저장 충돌** ([comments-conflict.md](comments-conflict.md))
+  - [2.6 저장 충돌](comments-conflict.md#26-저장-충돌)
 - **행 되돌리기** ([comments-revert.md](comments-revert.md))
   - [2.7 행 되돌리기](comments-revert.md#27-행-되돌리기)
 - **Excel에서 붙여넣기** ([comments-fill.md](comments-fill.md))
@@ -71,4 +72,4 @@
 - `REG_DT`의 `레코드를 등록한 일시`처럼 여러 테이블에 같은 설명을 넣으려면 `설명` 칸에 적고 적용한다. 테이블마다 다른 설명은 `설명` 칸을 비워 두면 그대로 남는다.
 - 두 칸이 모두 비어 있으면 아무것도 바꾸지 않고 `넣을 이름이나 설명을 입력하세요.`가 보인다. 빈 값으로 여러 테이블의 값을 한꺼번에 지우는 일을 막으려고 이렇게 했다. 지우는 것은 셀에서 직접 한다.
 - 이름과 설명을 합쳐 길이 한도를 넘게 되는 행은 건너뛰고 그 수를 알린다. 이름에 `§`(그 연결의 구분자)가 있으면 아무것도 바꾸지 않는다.
-- 같은 컬럼을 테이블 문서에서도 열어 고친 채로 이 문서를 먼저 저장하면, 테이블 문서를 저장할 때 [저장 충돌](comments-save.md#26-저장-충돌) 창이 뜬다.
+- 같은 컬럼을 테이블 문서에서도 열어 고친 채로 이 문서를 먼저 저장하면, 테이블 문서를 저장할 때 [저장 충돌](comments-conflict.md#26-저장-충돌) 창이 뜬다.
