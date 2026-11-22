@@ -36,7 +36,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [4. 정렬·거르기·열 정리](sql-editor-arrange.md) | 정렬, 거르기, 열 숨기기·고정·폭 맞추기, 고른 셀 요약 |
 | [4. 결과 저장](sql-editor-save.md) | 결과를 엑셀·CSV로 저장 |
 | [4. 편집 기능](sql-editor-editing.md) | 찾기·바꾸기, 세로 선택, 주석 처리, 책갈피, 코드 접기 등 |
-| [4. 개체 연결·파일](sql-editor-objects.md) | 이름 툴팁·코멘트 문서 열기·정의 열기·실행문 만들기, 쿼리 파일과 지난 탭 |
+| [4. 개체와 코멘트 연결](sql-editor-objects.md) | 이름 툴팁, 코멘트 문서 열기, 정의 열기, 실행문 만들기 |
+| [4. 파일로 저장·지난 탭](sql-editor-files.md) | 쿼리 파일 열기·저장, 앱을 켤 때 지난 탭 다시 열기 |
 | [4. DBMS별 차이](sql-editor-dbms.md) | MariaDB·MySQL·PostgreSQL·Oracle 연결의 조회 전용과 쓰기 허용 |
 | [5. 설정과 단축키](settings-shortcuts.md) | 설정 창(테마, 화면·코드 글꼴과 글자 크기 등), Windows·macOS 단축키 표 |
 | [6. 문제 해결](troubleshooting.md) | 연결·인증서·권한 문제, DB 탐색기 문제 |
