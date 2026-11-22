@@ -1,6 +1,6 @@
 # 4. SQL 편집기
 
-[목차](README.md) · 이전: [3. 정의서 내보내기](definition-export.md) · 다음: [4. 실행과 예상 규모](sql-editor-run.md)
+[목차](README.md) · 이전: [3. 정의서 내보내기](definition-export.md) · 다음: [4. 실행하기](sql-editor-run.md)
 
 고른 연결에 SQL을 실행하고 결과를 표로 본다. 데이터를 확인하거나 조금 고칠 때 쓴다.
 대량 변경이나 마이그레이션 스크립트에는 그 DBMS의 전용 도구를 쓴다.
@@ -12,9 +12,10 @@
 
 - **열기**
   - [4.1 열기](#41-열기)
-- **실행과 예상 규모** ([sql-editor-run.md](sql-editor-run.md))
+- **실행하기** ([sql-editor-run.md](sql-editor-run.md))
   - [4.2 실행하기](sql-editor-run.md#42-실행하기)
-  - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
+- **예상 규모** ([sql-editor-estimate.md](sql-editor-estimate.md))
+  - [4.3 예상 규모 줄](sql-editor-estimate.md#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
 - **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
@@ -79,7 +80,7 @@ DB 탐색기의 개체 노드를 편집기로 끌어다 놓으면 놓은 자리�
 | 영역 | 내용 |
 |---|---|
 | 툴바 | `실행` · `이 일괄 처리 실행` · `중단` · `결과 저장` · `결과 창`. 오른쪽 끝에 대상 `프로필명 · DB명`. MariaDB 연결에는 `쓰기 허용`이 더 있다 |
-| 예상 규모 줄 | 실행하기 전에 무슨 일이 일어날지 알려 준다([4.3](sql-editor-run.md#43-예상-규모-줄)). MariaDB 연결에서는 조회 전용인지 쓰기 허용인지를 보인다 |
+| 예상 규모 줄 | 실행하기 전에 무슨 일이 일어날지 알려 준다([4.3](sql-editor-estimate.md#43-예상-규모-줄)). MariaDB 연결에서는 조회 전용인지 쓰기 허용인지를 보인다 |
 | 편집기 | 구문 강조(SQL Server 연결은 T-SQL, MariaDB 연결은 MariaDB 문법), 줄 번호. 줄 번호 왼쪽 칸에 책갈피와 오류 표시, 오른쪽 칸에 접기 표시가 있다 |
 | 편집기 정보 줄 | 확대 비율, `위치 줄: 10, 문자: 20`, 선택한 글자·줄 수, 전체 글자·줄 수, 들여쓰기(`TABS`/`SPC`), 줄 끝(`CRLF`/`LF`), 인코딩(`UTF-8 BOM`, `CP949` 등). 책갈피나 같은 낱말이 있으면 그 개수도 적힌다 |
 | 결과 영역 | 결과 탭과 `메시지` 탭. **처음 실행하기 전에는 없다** |

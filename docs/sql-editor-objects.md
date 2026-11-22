@@ -6,9 +6,10 @@
 
 - **열기** ([sql-editor.md](sql-editor.md))
   - [4.1 열기](sql-editor.md#41-열기)
-- **실행과 예상 규모** ([sql-editor-run.md](sql-editor-run.md))
+- **실행하기** ([sql-editor-run.md](sql-editor-run.md))
   - [4.2 실행하기](sql-editor-run.md#42-실행하기)
-  - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
+- **예상 규모** ([sql-editor-estimate.md](sql-editor-estimate.md))
+  - [4.3 예상 규모 줄](sql-editor-estimate.md#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
 - **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))

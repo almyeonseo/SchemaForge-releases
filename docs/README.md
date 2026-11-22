@@ -29,7 +29,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [3. 가져오기](import.md) | 엑셀에서 고친 파일을 그리드에 채우고 확인한 뒤 저장하기 |
 | [3. 정의서 내보내기](definition-export.md) | 개체를 골라 표제부를 갖춘 제출용 엑셀 정의서 만들기 |
 | [4. SQL 편집기](sql-editor.md) | 편집기 여는 방법, `상위 1000개 행 선택`, 화면 구성 |
-| [4. 실행과 예상 규모](sql-editor-run.md) | 실행, 오류 표시, `GO` 일괄 처리, 예상 규모 줄 |
+| [4. 실행하기](sql-editor-run.md) | 실행, 오류 표시, `GO` 일괄 처리 |
+| [4. 예상 규모](sql-editor-estimate.md) | 실행 전에 보는 예상 규모 줄과 `규모 확인` |
 | [4. 결과 보기](sql-editor-results.md) | 결과 탭과 `메시지` 탭, 결과 탭 고정 |
 | [4. 결과 다루기](sql-editor-handling.md) | 셀 고르기, 복사, 값 보기, 행 세로로 보기, 결과에서 찾기 |
 | [4. 정렬·거르기와 결과 저장](sql-editor-arrange.md) | 정렬, 거르기, 열 숨기기·고정·폭 맞추기, 고른 셀 요약, 엑셀·CSV 저장 |
