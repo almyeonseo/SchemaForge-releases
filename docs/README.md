@@ -8,7 +8,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [1. 시작하기](getting-started.md) | 설치, 화면 구성, DB 연결 만들기 |
 | [1. DB 탐색기](getting-started-explorer.md) | 트리 구조, DB 노드, 우클릭 메뉴, 연결 순서, 개체·컬럼 검색 |
 | [1. DBMS별 연결](getting-started-dbms.md) | MariaDB·MySQL·PostgreSQL·Oracle 연결 만들기와 저장할 수 있는 것 |
-| [2. 코멘트 달기](comments.md) | 이름·설명 입력, 미작성·변경만 보기, 저장과 저장 로그, 저장 충돌, 행 되돌리기 |
+| [2. 코멘트 달기](comments.md) | 코멘트 저장 위치, 편집 화면, 이름·설명 입력, 미작성·변경만 보기 |
+| [2. 저장과 되돌리기](comments-save.md) | 저장과 저장 로그, 저장 충돌, 행 되돌리기 |
 | [2. 여러 행 한꺼번에 채우기](comments-fill.md) | Excel 붙여넣기, 이름 제안, 같은 컬럼명 이름 맞추기, 찾아 바꾸기·설명 편집 |
 | [2. 점검·비교](comments-review.md) | 작성률(품질 점검·추이·미작성 컬럼 채우기), 다른 DB·파일과 비교 |
 | [2. 이력·스크립트](comments-history.md) | 저장 이력과 이전 값으로 되돌리기, 변경분 스크립트 |

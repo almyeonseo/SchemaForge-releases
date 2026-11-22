@@ -4,14 +4,15 @@
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)에 모아 두었다.
 
-- **기본** ([comments.md](comments.md))
+- **화면과 입력** ([comments.md](comments.md))
   - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
   - [2.2 편집 화면 열기](comments.md#22-편집-화면-열기)
   - [2.3 값 입력하기](comments.md#23-값-입력하기)
   - [2.4 채울 곳만 보기](comments.md#24-채울-곳만-보기)
-  - [2.5 저장하기](comments.md#25-저장하기)
-  - [2.6 저장 충돌](comments.md#26-저장-충돌)
-  - [2.7 행 되돌리기](comments.md#27-행-되돌리기)
+- **저장과 되돌리기** ([comments-save.md](comments-save.md))
+  - [2.5 저장하기](comments-save.md#25-저장하기)
+  - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
+  - [2.7 행 되돌리기](comments-save.md#27-행-되돌리기)
 - **여러 행 한꺼번에 채우기** ([comments-fill.md](comments-fill.md))
   - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
   - [2.9 이름 제안으로 채우기](comments-fill.md#29-이름-제안으로-채우기)
@@ -30,7 +31,7 @@
 
 ### 무엇이 남나
 
-- 코멘트 저장이 성공할 때마다 한 묶음이 남는다. 묶음에는 저장한 때, 문서(`dbo.Orders`, `'CUST_NO' 컬럼` 등), 항목 수, 연결이 있고, 그 아래 항목마다 이전·새 이름과 설명이 있다. 이전 값의 기준은 [저장 로그](comments.md#저장-로그)와 같다.
+- 코멘트 저장이 성공할 때마다 한 묶음이 남는다. 묶음에는 저장한 때, 문서(`dbo.Orders`, `'CUST_NO' 컬럼` 등), 항목 수, 연결이 있고, 그 아래 항목마다 이전·새 이름과 설명이 있다. 이전 값의 기준은 [저장 로그](comments-save.md#저장-로그)와 같다.
 - 저장이 실패하면 DB에서 바뀐 것이 없으므로 남지 않는다.
 - **이력을 남기지 못해도 저장은 성공으로 끝난다.** DB에는 이미 들어갔으므로 출력 창에 `[경고] … 저장 이력을 남기지 못했습니다: …`만 남는다.
 - **1년이 지난 묶음은 지운다.**
