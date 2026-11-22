@@ -10,7 +10,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [1. DBMS별 연결](getting-started-dbms.md) | MariaDB·MySQL·PostgreSQL·Oracle 연결 만들기와 저장할 수 있는 것 |
 | [2. 코멘트 달기](comments.md) | 이름·설명 입력, 미작성·변경만 보기, 저장과 저장 로그, 저장 충돌, 행 되돌리기 |
 | [2. 여러 행 한꺼번에 채우기](comments-fill.md) | Excel 붙여넣기, 이름 제안, 같은 컬럼명 이름 맞추기, 찾아 바꾸기·설명 편집 |
-| [2. 점검·비교·이력](comments-review.md) | 작성률(품질 점검·추이·미작성 컬럼 채우기), 다른 DB·파일과 비교, 저장 이력, 변경분 스크립트 |
+| [2. 점검·비교](comments-review.md) | 작성률(품질 점검·추이·미작성 컬럼 채우기), 다른 DB·파일과 비교 |
+| [2. 이력·스크립트](comments-history.md) | 저장 이력과 이전 값으로 되돌리기, 변경분 스크립트 |
 | [3. 파일로 주고받기](import-export.md) | CSV·Excel 내보내기(보이는 행만 포함)와 가져오기, 엑셀 정의서 만들기 |
 | [4. SQL 편집기](sql-editor.md) | 열기, 실행과 `GO` 일괄 처리, 예상 규모 |
 | [4. 결과 보기와 저장](sql-editor-results.md) | 결과 탭, 셀 고르기·복사·정렬·거르기·열 고정, 엑셀·CSV 저장 |
