@@ -18,10 +18,11 @@
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
   - [4.5 결과 다루기](sql-editor-results.md#45-결과-다루기)
   - [4.6 결과 저장](sql-editor-results.md#46-결과-저장)
-- **편집·개체 연결·파일** ([sql-editor-editing.md](sql-editor-editing.md))
+- **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
   - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
-  - [4.8 개체와 코멘트 연결](sql-editor-editing.md#48-개체와-코멘트-연결)
-  - [4.9 파일로 저장·지난 탭](sql-editor-editing.md#49-파일로-저장지난-탭)
+- **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
+  - [4.8 개체와 코멘트 연결](sql-editor-objects.md#48-개체와-코멘트-연결)
+  - [4.9 파일로 저장·지난 탭](sql-editor-objects.md#49-파일로-저장지난-탭)
 - **DBMS별 차이** ([sql-editor-dbms.md](sql-editor-dbms.md))
   - [4.10 MariaDB 연결](sql-editor-dbms.md#410-mariadb-연결)
   - [4.11 PostgreSQL 연결](sql-editor-dbms.md#411-postgresql-연결)
@@ -38,8 +39,8 @@
 | **파일 > 쿼리 파일 열기...** `Ctrl+O`(macOS `Cmd+O`) | `.sql` 파일을 고른 연결에 붙여 연다. 이미 열린 파일이면 그 탭으로 간다 |
 | **파일 > 최근 쿼리 파일** | 최근에 열거나 저장한 파일 |
 | 테이블·뷰 오른쪽 클릭 > `상위 1000개 행 선택 ▸` | 조회문을 채운 새 탭을 연다. 아래 표 |
-| 테이블·뷰·프로시저·함수 오른쪽 클릭 > `정의 열기` | 개체 본문(테이블은 `CREATE TABLE` 스크립트)을 새 탭에 연다([4.8](sql-editor-editing.md#48-개체와-코멘트-연결)) |
-| 프로시저·함수 오른쪽 클릭 > `실행문 만들기` | 파라미터를 채운 실행문을 새 탭에 연다([4.8](sql-editor-editing.md#48-개체와-코멘트-연결)) |
+| 테이블·뷰·프로시저·함수 오른쪽 클릭 > `정의 열기` | 개체 본문(테이블은 `CREATE TABLE` 스크립트)을 새 탭에 연다([4.8](sql-editor-objects.md#48-개체와-코멘트-연결)) |
+| 프로시저·함수 오른쪽 클릭 > `실행문 만들기` | 파라미터를 채운 실행문을 새 탭에 연다([4.8](sql-editor-objects.md#48-개체와-코멘트-연결)) |
 
 연결을 고르지 않으면 메뉴와 툴바의 `새 쿼리`가 꺼지고, `Ctrl+N`·`Ctrl+O`(macOS `Cmd+N`·`Cmd+O`)를 누르면 상태바에 안내가 뜬다.
 새 탭은 편집기에 커서가 놓인 채 열려 바로 입력할 수 있다.

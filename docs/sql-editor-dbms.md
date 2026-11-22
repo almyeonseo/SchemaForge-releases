@@ -1,6 +1,6 @@
 # 4. SQL 편집기 — DBMS별 차이
 
-[목차](README.md) · 이전: [4. 편집·개체 연결·파일](sql-editor-editing.md) · 다음: [5. 설정과 단축키](settings-shortcuts.md)
+[목차](README.md) · 이전: [4. 개체 연결·파일](sql-editor-objects.md) · 다음: [5. 설정과 단축키](settings-shortcuts.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -12,10 +12,11 @@
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
   - [4.5 결과 다루기](sql-editor-results.md#45-결과-다루기)
   - [4.6 결과 저장](sql-editor-results.md#46-결과-저장)
-- **편집·개체 연결·파일** ([sql-editor-editing.md](sql-editor-editing.md))
+- **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
   - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
-  - [4.8 개체와 코멘트 연결](sql-editor-editing.md#48-개체와-코멘트-연결)
-  - [4.9 파일로 저장·지난 탭](sql-editor-editing.md#49-파일로-저장지난-탭)
+- **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
+  - [4.8 개체와 코멘트 연결](sql-editor-objects.md#48-개체와-코멘트-연결)
+  - [4.9 파일로 저장·지난 탭](sql-editor-objects.md#49-파일로-저장지난-탭)
 - **DBMS별 차이**
   - [4.10 MariaDB 연결](#410-mariadb-연결)
   - [4.11 PostgreSQL 연결](#411-postgresql-연결)
