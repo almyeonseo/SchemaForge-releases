@@ -11,20 +11,22 @@
   - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-- **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
+- **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
   - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
-  - [4.6 결과 저장](sql-editor-handling.md#46-결과-저장)
+- **정렬·거르기와 결과 저장** ([sql-editor-arrange.md](sql-editor-arrange.md))
+  - [4.6 정렬·거르기·열 정리](sql-editor-arrange.md#46-정렬거르기열-정리)
+  - [4.7 결과 저장](sql-editor-arrange.md#47-결과-저장)
 - **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
-  - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
+  - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
 - **개체 연결·파일**
-  - [4.8 개체와 코멘트 연결](#48-개체와-코멘트-연결)
-  - [4.9 파일로 저장·지난 탭](#49-파일로-저장지난-탭)
+  - [4.9 개체와 코멘트 연결](#49-개체와-코멘트-연결)
+  - [4.10 파일로 저장·지난 탭](#410-파일로-저장지난-탭)
 - **DBMS별 차이** ([sql-editor-dbms.md](sql-editor-dbms.md))
-  - [4.10 MariaDB 연결](sql-editor-dbms.md#410-mariadb-연결)
-  - [4.11 PostgreSQL 연결](sql-editor-dbms.md#411-postgresql-연결)
-  - [4.12 Oracle 연결](sql-editor-dbms.md#412-oracle-연결)
+  - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
+  - [4.12 PostgreSQL 연결](sql-editor-dbms.md#412-postgresql-연결)
+  - [4.13 Oracle 연결](sql-editor-dbms.md#413-oracle-연결)
 
-## 4.8 개체와 코멘트 연결
+## 4.9 개체와 코멘트 연결
 
 편집기에서 개체명을 읽어 그 개체의 이름을 보여 주고 코멘트 문서로 이어 준다. 개체명은 `Orders`, `dbo.Orders`, `[sales].[Customer]`, `DB.dbo.Orders`를 읽는다. 스키마를 생략하면 접속 계정의 기본 스키마로 찾는다. MariaDB 연결에서는 역따옴표로 감싼 이름(`` `shop`.`orders` ``)도 읽는다.
 
@@ -84,7 +86,7 @@ DB 탐색기에서 프로시저·함수를 오른쪽 클릭해 `실행문 만들
 
 이름 주석을 단 `SELECT`는 [4.1](sql-editor.md#41-열기)의 `상위 1000개 행 선택 ▸ 이름 주석`이다.
 
-## 4.9 파일로 저장·지난 탭
+## 4.10 파일로 저장·지난 탭
 
 - SQL 편집기 탭에서 `Ctrl+S`(macOS `Cmd+S`)는 DB가 아니라 **`.sql` 파일로 저장**한다. 파일로 연 탭은 그 파일에 덮어쓰고, 새 탭은 처음 저장할 때 저장할 곳을 묻는다(기본 이름 `SQLQuery1.sql`).
 - 저장하다 디스크가 차거나 오류가 나도 원래 파일은 그대로 남는다. 새 내용을 다 쓴 뒤에 바꿔 넣기 때문이다.

@@ -5,8 +5,8 @@
 고른 연결에 SQL을 실행하고 결과를 표로 본다. 데이터를 확인하거나 조금 고칠 때 쓴다.
 대량 변경이나 마이그레이션 스크립트에는 그 DBMS의 전용 도구를 쓴다.
 
-4.1~4.9는 MS SQL Server 연결 기준으로 적었다. MariaDB 연결에서 다른 곳에는 그 자리에 표시해 두었고, 조회 전용과 쓰기 허용은 [4.10](sql-editor-dbms.md#410-mariadb-연결)(MySQL도 같다),
-[4.11](sql-editor-dbms.md#411-postgresql-연결)(PostgreSQL), [4.12](sql-editor-dbms.md#412-oracle-연결)(Oracle)에 모았다.
+4.1~4.10은 MS SQL Server 연결 기준으로 적었다. MariaDB 연결에서 다른 곳에는 그 자리에 표시해 두었고, 조회 전용과 쓰기 허용은 [4.11](sql-editor-dbms.md#411-mariadb-연결)(MySQL도 같다),
+[4.12](sql-editor-dbms.md#412-postgresql-연결)(PostgreSQL), [4.13](sql-editor-dbms.md#413-oracle-연결)(Oracle)에 모았다.
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -17,18 +17,20 @@
   - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-- **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
+- **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
   - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
-  - [4.6 결과 저장](sql-editor-handling.md#46-결과-저장)
+- **정렬·거르기와 결과 저장** ([sql-editor-arrange.md](sql-editor-arrange.md))
+  - [4.6 정렬·거르기·열 정리](sql-editor-arrange.md#46-정렬거르기열-정리)
+  - [4.7 결과 저장](sql-editor-arrange.md#47-결과-저장)
 - **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
-  - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
+  - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
 - **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
-  - [4.8 개체와 코멘트 연결](sql-editor-objects.md#48-개체와-코멘트-연결)
-  - [4.9 파일로 저장·지난 탭](sql-editor-objects.md#49-파일로-저장지난-탭)
+  - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
+  - [4.10 파일로 저장·지난 탭](sql-editor-objects.md#410-파일로-저장지난-탭)
 - **DBMS별 차이** ([sql-editor-dbms.md](sql-editor-dbms.md))
-  - [4.10 MariaDB 연결](sql-editor-dbms.md#410-mariadb-연결)
-  - [4.11 PostgreSQL 연결](sql-editor-dbms.md#411-postgresql-연결)
-  - [4.12 Oracle 연결](sql-editor-dbms.md#412-oracle-연결)
+  - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
+  - [4.12 PostgreSQL 연결](sql-editor-dbms.md#412-postgresql-연결)
+  - [4.13 Oracle 연결](sql-editor-dbms.md#413-oracle-연결)
 
 ## 4.1 열기
 
@@ -41,8 +43,8 @@
 | **파일 > 쿼리 파일 열기...** `Ctrl+O`(macOS `Cmd+O`) | `.sql` 파일을 고른 연결에 붙여 연다. 이미 열린 파일이면 그 탭으로 간다 |
 | **파일 > 최근 쿼리 파일** | 최근에 열거나 저장한 파일 |
 | 테이블·뷰 오른쪽 클릭 > `상위 1000개 행 선택 ▸` | 조회문을 채운 새 탭을 연다. 아래 표 |
-| 테이블·뷰·프로시저·함수 오른쪽 클릭 > `정의 열기` | 개체 본문(테이블은 `CREATE TABLE` 스크립트)을 새 탭에 연다([4.8](sql-editor-objects.md#48-개체와-코멘트-연결)) |
-| 프로시저·함수 오른쪽 클릭 > `실행문 만들기` | 파라미터를 채운 실행문을 새 탭에 연다([4.8](sql-editor-objects.md#48-개체와-코멘트-연결)) |
+| 테이블·뷰·프로시저·함수 오른쪽 클릭 > `정의 열기` | 개체 본문(테이블은 `CREATE TABLE` 스크립트)을 새 탭에 연다([4.9](sql-editor-objects.md#49-개체와-코멘트-연결)) |
+| 프로시저·함수 오른쪽 클릭 > `실행문 만들기` | 파라미터를 채운 실행문을 새 탭에 연다([4.9](sql-editor-objects.md#49-개체와-코멘트-연결)) |
 
 연결을 고르지 않으면 메뉴와 툴바의 `새 쿼리`가 꺼지고, `Ctrl+N`·`Ctrl+O`(macOS `Cmd+N`·`Cmd+O`)를 누르면 상태바에 안내가 뜬다.
 새 탭은 편집기에 커서가 놓인 채 열려 바로 입력할 수 있다.

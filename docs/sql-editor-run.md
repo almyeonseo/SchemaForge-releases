@@ -11,18 +11,20 @@
   - [4.3 예상 규모 줄](#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-- **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
+- **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
   - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
-  - [4.6 결과 저장](sql-editor-handling.md#46-결과-저장)
+- **정렬·거르기와 결과 저장** ([sql-editor-arrange.md](sql-editor-arrange.md))
+  - [4.6 정렬·거르기·열 정리](sql-editor-arrange.md#46-정렬거르기열-정리)
+  - [4.7 결과 저장](sql-editor-arrange.md#47-결과-저장)
 - **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
-  - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
+  - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
 - **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
-  - [4.8 개체와 코멘트 연결](sql-editor-objects.md#48-개체와-코멘트-연결)
-  - [4.9 파일로 저장·지난 탭](sql-editor-objects.md#49-파일로-저장지난-탭)
+  - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
+  - [4.10 파일로 저장·지난 탭](sql-editor-objects.md#410-파일로-저장지난-탭)
 - **DBMS별 차이** ([sql-editor-dbms.md](sql-editor-dbms.md))
-  - [4.10 MariaDB 연결](sql-editor-dbms.md#410-mariadb-연결)
-  - [4.11 PostgreSQL 연결](sql-editor-dbms.md#411-postgresql-연결)
-  - [4.12 Oracle 연결](sql-editor-dbms.md#412-oracle-연결)
+  - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
+  - [4.12 PostgreSQL 연결](sql-editor-dbms.md#412-postgresql-연결)
+  - [4.13 Oracle 연결](sql-editor-dbms.md#413-oracle-연결)
 
 ## 4.2 실행하기
 
@@ -33,7 +35,7 @@
 | **중단** | `Ctrl+.`(macOS `Cmd+.`), 툴바 `중단`, **문서 > 실행 중단** | 실행을 멈추고 그때까지의 변경을 되돌린다 |
 
 - 실행하면 그 SQL을 곧바로 서버에 보낸다. 실행 전체를 트랜잭션 하나로 감싸, 끝까지 성공하면 커밋하고 중간에 실패하면 그때까지의 변경을 모두 되돌린다.
-  MariaDB 연결은 기본으로 조회만 하고 트랜잭션으로 감싸지 않는다. `쓰기 허용`을 켠 탭만 감싼다([4.10](sql-editor-dbms.md#410-mariadb-연결)).
+  MariaDB 연결은 기본으로 조회만 하고 트랜잭션으로 감싸지 않는다. `쓰기 허용`을 켠 탭만 감싼다([4.11](sql-editor-dbms.md#411-mariadb-연결)).
 - 실행 범위와 예상 규모 줄이 늘 같은 범위를 본다. 선택 영역이 있으면 예상 규모 줄 앞에 `선택 영역 ·`이 붙는다.
 - `F5`는 DB 탐색기에 포커스가 있으면 실행이 아니라 탐색기 새로고침이다. `Ctrl+Enter`(macOS `Cmd+Enter`)는 포커스와 상관없이 실행이다.
 - 실행 기록(대상, SQL 본문, 서버 메시지, 영향 행 수, 성공 여부)은 출력 창에 남는다. 연결 문자열과 계정은 남지 않는다.

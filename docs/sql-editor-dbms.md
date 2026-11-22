@@ -11,20 +11,22 @@
   - [4.3 예상 규모 줄](sql-editor-run.md#43-예상-규모-줄)
 - **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-- **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
+- **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
   - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
-  - [4.6 결과 저장](sql-editor-handling.md#46-결과-저장)
+- **정렬·거르기와 결과 저장** ([sql-editor-arrange.md](sql-editor-arrange.md))
+  - [4.6 정렬·거르기·열 정리](sql-editor-arrange.md#46-정렬거르기열-정리)
+  - [4.7 결과 저장](sql-editor-arrange.md#47-결과-저장)
 - **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
-  - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
+  - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
 - **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
-  - [4.8 개체와 코멘트 연결](sql-editor-objects.md#48-개체와-코멘트-연결)
-  - [4.9 파일로 저장·지난 탭](sql-editor-objects.md#49-파일로-저장지난-탭)
+  - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
+  - [4.10 파일로 저장·지난 탭](sql-editor-objects.md#410-파일로-저장지난-탭)
 - **DBMS별 차이**
-  - [4.10 MariaDB 연결](#410-mariadb-연결)
-  - [4.11 PostgreSQL 연결](#411-postgresql-연결)
-  - [4.12 Oracle 연결](#412-oracle-연결)
+  - [4.11 MariaDB 연결](#411-mariadb-연결)
+  - [4.12 PostgreSQL 연결](#412-postgresql-연결)
+  - [4.13 Oracle 연결](#413-oracle-연결)
 
-## 4.10 MariaDB 연결
+## 4.11 MariaDB 연결
 
 MariaDB 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
 
@@ -66,9 +68,9 @@ MariaDB 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
 - OUT·INOUT 파라미터는 사용자 변수(`@이름`)로 받는다. INOUT은 넘기기 전에 `SET @이름 = NULL;`로 값을 둔다.
 - `정의 열기`는 `SHOW CREATE` 결과를 실행할 수 없는 읽기 전용 문서로 연다. 루틴 본문은 그 루틴을 만든 계정만 볼 수 있고, 뷰 정의는 `SHOW VIEW` 권한이 있어야 보인다.
 
-## 4.11 PostgreSQL 연결
+## 4.12 PostgreSQL 연결
 
-PostgreSQL 연결에서도 같은 편집기를 쓴다. 기본은 [4.10](#410-mariadb-연결)처럼 조회만 한다. 다른 점만 적는다.
+PostgreSQL 연결에서도 같은 편집기를 쓴다. 기본은 [4.11](#411-mariadb-연결)처럼 조회만 한다. 다른 점만 적는다.
 
 - 조회 전용 탭에서 쓰기·DDL·`COMMENT`는 서버가 거부하고 `조회 전용 연결이라 쓰기·DDL·COMMENT는 실행하지 않았습니다.`가 보인다.
 - `쓰기 허용`을 켜면 SQL 전체를 트랜잭션으로 감싸 성공하면 커밋, 실패하면 **DDL까지 모두 되돌린다.** SQL 안의 `COMMIT`·`ROLLBACK`이 트랜잭션을 끝냈으면 그 사실을 알린다.
@@ -78,7 +80,7 @@ PostgreSQL 연결에서도 같은 편집기를 쓴다. 기본은 [4.10](#410-mar
 - 드라이버가 읽지 못하는 형식(`regclass` 등)은 그 칸만 `::text로 바꿔 조회하세요`라는 안내로 채운다. 배열은 `{1,2}`로 보인다.
 - `상위 1000개 행 선택 ▸ 모든 컬럼 (*)`은 `SELECT * FROM "스키마"."표" LIMIT 1000;`을 채운다.
 
-## 4.12 Oracle 연결
+## 4.13 Oracle 연결
 
 Oracle 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
 
