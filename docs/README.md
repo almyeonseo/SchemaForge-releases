@@ -8,7 +8,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [1. 시작하기](getting-started.md) | 설치, 화면 구성, DB 연결 만들기 |
 | [1. DB 탐색기](getting-started-explorer.md) | 트리 구조, 펼치기와 열기, 탐색기 툴바, 우클릭 메뉴 |
 | [1. 연결 정리와 검색](getting-started-search.md) | 연결 순서 바꾸기, SQL 편집기로 끌어 놓기, 개체·컬럼 검색 |
-| [1. DBMS별 연결](getting-started-dbms.md) | MariaDB·MySQL·PostgreSQL·Oracle 연결 만들기와 저장할 수 있는 것 |
+| [1. MariaDB·MySQL 연결](getting-started-dbms.md) | MariaDB·MySQL 연결 만들기, 트리, 저장할 수 있는 것, 테이블마다 저장 |
+| [1. PostgreSQL·Oracle 연결](getting-started-postgresql-oracle.md) | PostgreSQL·Oracle 연결 만들기, 트리, 저장 |
 | [2. 코멘트 달기](comments.md) | 코멘트 저장 위치와 구분자, 편집 화면(분류 목록·개체 문서·툴바) |
 | [2. 값 입력과 보기](comments-input.md) | 이름·설명 입력, 미작성만·변경만 보기 |
 | [2. 저장과 되돌리기](comments-save.md) | 저장과 저장 로그, 저장 충돌, 행 되돌리기 |
