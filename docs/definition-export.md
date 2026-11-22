@@ -1,10 +1,11 @@
 # 3. 파일로 주고받기 — 정의서 내보내기
 
-[목차](README.md) · 이전: [3. 파일로 주고받기](import-export.md) · 다음: [4. SQL 편집기](sql-editor.md)
+[목차](README.md) · 이전: [3. 가져오기](import.md) · 다음: [4. SQL 편집기](sql-editor.md)
 
-- **내보내기와 가져오기** ([import-export.md](import-export.md))
+- **내보내기** ([import-export.md](import-export.md))
   - [3.1 내보내기](import-export.md#31-내보내기)
-  - [3.2 가져오기](import-export.md#32-가져오기)
+- **가져오기** ([import.md](import.md))
+  - [3.2 가져오기](import.md#32-가져오기)
 - **정의서 내보내기**
   - [3.3 정의서 내보내기](#33-정의서-내보내기)
 
