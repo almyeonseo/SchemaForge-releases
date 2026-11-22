@@ -1,35 +1,22 @@
 # 4. SQL 편집기 — 정렬·거르기·열 정리
 
-[목차](README.md) · 이전: [4. 결과 다루기](sql-editor-handling.md) · 다음: [4. 결과 저장](sql-editor-save.md)
+[목차](README.md) · 이전: [4.5 결과 다루기](sql-editor-handling.md) · 다음: [4.7 결과 저장](sql-editor-save.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](shortcuts.md#52-단축키)에 있다.
 
-- **열기** ([sql-editor.md](sql-editor.md))
-  - [4.1 열기](sql-editor.md#41-열기)
-- **실행하기** ([sql-editor-run.md](sql-editor-run.md))
-  - [4.2 실행하기](sql-editor-run.md#42-실행하기)
-- **예상 규모** ([sql-editor-estimate.md](sql-editor-estimate.md))
-  - [4.3 예상 규모 줄](sql-editor-estimate.md#43-예상-규모-줄)
-- **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
-  - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-- **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
-  - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
-- **정렬·거르기·열 정리**
-  - [4.6 정렬·거르기·열 정리](#46-정렬거르기열-정리)
-- **결과 저장** ([sql-editor-save.md](sql-editor-save.md))
-  - [4.7 결과 저장](sql-editor-save.md#47-결과-저장)
-- **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
-  - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
-- **개체와 코멘트 연결** ([sql-editor-objects.md](sql-editor-objects.md))
-  - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
-- **파일로 저장·지난 탭** ([sql-editor-files.md](sql-editor-files.md))
-  - [4.10 파일로 저장·지난 탭](sql-editor-files.md#410-파일로-저장지난-탭)
-- **MariaDB 연결** ([sql-editor-dbms.md](sql-editor-dbms.md))
-  - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
-- **PostgreSQL 연결** ([sql-editor-postgresql.md](sql-editor-postgresql.md))
-  - [4.12 PostgreSQL 연결](sql-editor-postgresql.md#412-postgresql-연결)
-- **Oracle 연결** ([sql-editor-oracle.md](sql-editor-oracle.md))
-  - [4.13 Oracle 연결](sql-editor-oracle.md#413-oracle-연결)
+- [4.1 열기](sql-editor.md#41-열기)
+- [4.2 실행하기](sql-editor-run.md#42-실행하기)
+- [4.3 예상 규모 줄](sql-editor-estimate.md#43-예상-규모-줄)
+- [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
+- [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
+- [4.6 정렬·거르기·열 정리](#46-정렬거르기열-정리)
+- [4.7 결과 저장](sql-editor-save.md#47-결과-저장)
+- [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
+- [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
+- [4.10 파일로 저장·지난 탭](sql-editor-files.md#410-파일로-저장지난-탭)
+- [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
+- [4.12 PostgreSQL 연결](sql-editor-postgresql.md#412-postgresql-연결)
+- [4.13 Oracle 연결](sql-editor-oracle.md#413-oracle-연결)
 
 ## 4.6 정렬·거르기·열 정리
 

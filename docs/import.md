@@ -1,13 +1,10 @@
 # 3. 파일로 주고받기 — 가져오기
 
-[목차](README.md) · 이전: [3. 파일로 주고받기](import-export.md) · 다음: [3. 정의서 내보내기](definition-export.md)
+[목차](README.md) · 이전: [3.1 내보내기](import-export.md) · 다음: [3.3 정의서 내보내기](definition-export.md)
 
-- **내보내기** ([import-export.md](import-export.md))
-  - [3.1 내보내기](import-export.md#31-내보내기)
-- **가져오기**
-  - [3.2 가져오기](#32-가져오기)
-- **정의서 내보내기** ([definition-export.md](definition-export.md))
-  - [3.3 정의서 내보내기](definition-export.md#33-정의서-내보내기)
+- [3.1 내보내기](import-export.md#31-내보내기)
+- [3.2 가져오기](#32-가져오기)
+- [3.3 정의서 내보내기](definition-export.md#33-정의서-내보내기)
 
 ## 3.2 가져오기
 

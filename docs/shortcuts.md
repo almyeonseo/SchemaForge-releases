@@ -1,11 +1,9 @@
 # 5. 설정과 단축키 — 단축키
 
-[목차](README.md) · 이전: [5. 설정과 단축키](settings-shortcuts.md) · 다음: [6. 문제 해결](troubleshooting.md)
+[목차](README.md) · 이전: [5.1 설정](settings-shortcuts.md) · 다음: [6.1 설치와 연결](troubleshooting.md)
 
-- **설정** ([settings-shortcuts.md](settings-shortcuts.md))
-  - [5.1 설정](settings-shortcuts.md#51-설정)
-- **단축키**
-  - [5.2 단축키](#52-단축키)
+- [5.1 설정](settings-shortcuts.md#51-설정)
+- [5.2 단축키](#52-단축키)
 
 ## 5.2 단축키
 

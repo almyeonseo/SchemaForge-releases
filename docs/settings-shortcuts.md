@@ -1,11 +1,9 @@
 # 5. 설정과 단축키
 
-[목차](README.md) · 이전: [4. Oracle 연결](sql-editor-oracle.md) · 다음: [5. 단축키](shortcuts.md)
+[목차](README.md) · 이전: [4.13 Oracle 연결](sql-editor-oracle.md) · 다음: [5.2 단축키](shortcuts.md)
 
-- **설정**
-  - [5.1 설정](#51-설정)
-- **단축키** ([shortcuts.md](shortcuts.md))
-  - [5.2 단축키](shortcuts.md#52-단축키)
+- [5.1 설정](#51-설정)
+- [5.2 단축키](shortcuts.md#52-단축키)
 
 ## 5.1 설정
 

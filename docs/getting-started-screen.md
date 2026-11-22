@@ -1,25 +1,16 @@
 # 1. 시작하기 — 화면 구성
 
-[목차](README.md) · 이전: [1. 시작하기](getting-started.md) · 다음: [1. DB 연결 만들기](getting-started-connect.md)
+[목차](README.md) · 이전: [1.1 설치](getting-started.md) · 다음: [1.3 DB 연결 만들기](getting-started-connect.md)
 
-- **설치** ([getting-started.md](getting-started.md))
-  - [1.1 설치](getting-started.md#11-설치)
-- **화면 구성**
-  - [1.2 화면 구성](#12-화면-구성)
-- **DB 연결 만들기** ([getting-started-connect.md](getting-started-connect.md))
-  - [1.3 DB 연결 만들기](getting-started-connect.md#13-db-연결-만들기)
-- **DB 탐색기** ([getting-started-explorer.md](getting-started-explorer.md))
-  - [1.4 DB 탐색기 쓰기](getting-started-explorer.md#14-db-탐색기-쓰기)
-- **연결 정리와 검색** ([getting-started-search.md](getting-started-search.md))
-  - [1.5 연결 정리와 검색](getting-started-search.md#15-연결-정리와-검색)
-- **MariaDB 연결** ([getting-started-dbms.md](getting-started-dbms.md))
-  - [1.6 MariaDB 연결](getting-started-dbms.md#16-mariadb-연결)
-- **MySQL 연결** ([getting-started-mysql.md](getting-started-mysql.md))
-  - [1.7 MySQL 연결](getting-started-mysql.md#17-mysql-연결)
-- **PostgreSQL 연결** ([getting-started-postgresql-oracle.md](getting-started-postgresql-oracle.md))
-  - [1.8 PostgreSQL 연결](getting-started-postgresql-oracle.md#18-postgresql-연결)
-- **Oracle 연결** ([getting-started-oracle.md](getting-started-oracle.md))
-  - [1.9 Oracle 연결](getting-started-oracle.md#19-oracle-연결)
+- [1.1 설치](getting-started.md#11-설치)
+- [1.2 화면 구성](#12-화면-구성)
+- [1.3 DB 연결 만들기](getting-started-connect.md#13-db-연결-만들기)
+- [1.4 DB 탐색기 쓰기](getting-started-explorer.md#14-db-탐색기-쓰기)
+- [1.5 연결 정리와 검색](getting-started-search.md#15-연결-정리와-검색)
+- [1.6 MariaDB 연결](getting-started-dbms.md#16-mariadb-연결)
+- [1.7 MySQL 연결](getting-started-mysql.md#17-mysql-연결)
+- [1.8 PostgreSQL 연결](getting-started-postgresql-oracle.md#18-postgresql-연결)
+- [1.9 Oracle 연결](getting-started-oracle.md#19-oracle-연결)
 
 ## 1.2 화면 구성
 
