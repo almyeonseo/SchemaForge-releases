@@ -88,7 +88,7 @@ macOS에서는 대개 `Ctrl` 자리를 `Cmd`로 누른다. 다른 점은 아래 
 | 결과에서 고른 셀의 값 보기 — 셀 더블클릭과 같다 | `Shift+Enter` | `Shift+Enter` |
 | 결과에서 고른 셀의 행을 세로로 보기 | `Alt+Enter` | `Option+Enter` |
 
-결과 그리드에서는 아래 키도 쓴다([4.5](sql-editor-results.md#45-결과-다루기)).
+결과 그리드에서는 아래 키도 쓴다([4.5](sql-editor-handling.md#45-결과-다루기)).
 
 | 동작 | Windows·Linux | macOS |
 |---|---|---|

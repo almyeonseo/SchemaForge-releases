@@ -1,6 +1,6 @@
 # 4. SQL 편집기
 
-[목차](README.md) · 이전: [3. 파일로 주고받기](import-export.md) · 다음: [4. 결과 보기와 저장](sql-editor-results.md)
+[목차](README.md) · 이전: [3. 파일로 주고받기](import-export.md) · 다음: [4. 결과 보기](sql-editor-results.md)
 
 고른 연결에 SQL을 실행하고 결과를 표로 본다. 데이터를 확인하거나 조금 고칠 때 쓴다.
 대량 변경이나 마이그레이션 스크립트에는 그 DBMS의 전용 도구를 쓴다.
@@ -14,10 +14,11 @@
   - [4.1 열기](#41-열기)
   - [4.2 실행하기](#42-실행하기)
   - [4.3 예상 규모 줄](#43-예상-규모-줄)
-- **결과 보기와 저장** ([sql-editor-results.md](sql-editor-results.md))
+- **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-  - [4.5 결과 다루기](sql-editor-results.md#45-결과-다루기)
-  - [4.6 결과 저장](sql-editor-results.md#46-결과-저장)
+- **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
+  - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
+  - [4.6 결과 저장](sql-editor-handling.md#46-결과-저장)
 - **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
   - [4.7 편집 기능](sql-editor-editing.md#47-편집-기능)
 - **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))

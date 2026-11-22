@@ -1,6 +1,6 @@
 # 4. SQL 편집기 — 편집 기능
 
-[목차](README.md) · 이전: [4. 결과 보기와 저장](sql-editor-results.md) · 다음: [4. 개체 연결·파일](sql-editor-objects.md)
+[목차](README.md) · 이전: [4. 결과 다루기와 저장](sql-editor-handling.md) · 다음: [4. 개체 연결·파일](sql-editor-objects.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -8,10 +8,11 @@
   - [4.1 열기](sql-editor.md#41-열기)
   - [4.2 실행하기](sql-editor.md#42-실행하기)
   - [4.3 예상 규모 줄](sql-editor.md#43-예상-규모-줄)
-- **결과 보기와 저장** ([sql-editor-results.md](sql-editor-results.md))
+- **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
   - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
-  - [4.5 결과 다루기](sql-editor-results.md#45-결과-다루기)
-  - [4.6 결과 저장](sql-editor-results.md#46-결과-저장)
+- **결과 다루기와 저장** ([sql-editor-handling.md](sql-editor-handling.md))
+  - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
+  - [4.6 결과 저장](sql-editor-handling.md#46-결과-저장)
 - **편집 기능**
   - [4.7 편집 기능](#47-편집-기능)
 - **개체 연결·파일** ([sql-editor-objects.md](sql-editor-objects.md))
