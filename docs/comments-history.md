@@ -1,6 +1,6 @@
-# 2. 코멘트 달기 — 이력·스크립트
+# 2. 코멘트 달기 — 저장 이력
 
-[목차](README.md) · 이전: [2. 다른 DB·파일과 비교](comments-compare.md) · 다음: [3. 파일로 주고받기](import-export.md)
+[목차](README.md) · 이전: [2. 다른 DB·파일과 비교](comments-compare.md) · 다음: [2. 변경분 스크립트](comments-script.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -25,9 +25,10 @@
   - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
 - **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))
   - [2.13 다른 DB와 비교해 맞추기](comments-compare.md#213-다른-db와-비교해-맞추기)
-- **이력·스크립트**
+- **저장 이력**
   - [2.14 저장 이력](#214-저장-이력)
-  - [2.15 변경분을 SQL 스크립트로 내보내기](#215-변경분을-sql-스크립트로-내보내기)
+- **변경분 스크립트** ([comments-script.md](comments-script.md))
+  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-script.md#215-변경분을-sql-스크립트로-내보내기)
 
 ## 2.14 저장 이력
 
@@ -96,43 +97,3 @@ DB의 지금 값을 보고 판단하도록 이력의 값은 넣지 않는다.
 | 그 문서에 저장하지 않은 편집이 있는 항목 | 덮으면 고치던 값이 사라진다 |
 | DB의 지금 값이 이력의 새 값과 다른 항목 | 그 저장 뒤에 누가 다시 바꾼 것이라, 되돌리면 그 뒤의 변경까지 지운다 |
 | 문서에서 찾지 못한 항목 | 개체가 지워졌거나 이름이 바뀌었다 |
-
-## 2.15 변경분을 SQL 스크립트로 내보내기
-
-저장하지 않은 변경을 DB에 쓰지 않고, 코멘트를 바꾸는 SQL 스크립트(`.sql`)로 내보낸다. 운영 DB처럼 직접 저장할 권한이 없는 곳에
-DBA가 대신 넣거나, 반영 절차에 스크립트를 첨부할 때 쓴다.
-
-1. 코멘트 문서에서 값을 고친다. 변경이 없으면 버튼이 꺼져 있다.
-2. 툴바 `저장` 오른쪽의 스크립트 아이콘(`변경분 스크립트`)을 누르거나 **문서 > 변경분 스크립트...**.
-3. 저장 창에서 파일을 고른다. 기본 이름은 `{DB}_{탭 제목}_코멘트변경_{날짜_시각}`이다.
-4. 상태줄에 `N건을 스크립트로 내보냈습니다. DB에는 반영하지 않았습니다: {경로}`가 보인다.
-
-- **DB에는 아무것도 쓰지 않고, 그리드의 변경 표시도 그대로 남는다.** 이 DB에도 넣으려면 따로 `저장`을 누른다.
-- 담기는 항목과 값은 그 순간 `저장`을 눌렀을 때 보낼 것과 같다. 걸러져 안 보이는 변경도 들어간다.
-- 이름의 `§`·길이 한도 검사는 저장과 같다. 걸리면 파일을 만들지 않는다.
-
-MS SQL Server 연결의 스크립트는 이렇게 생겼다.
-
-```sql
--- SchemaForge 코멘트 변경 스크립트
--- 원본: {서버} / {DB}   만든 시각: 2026-10-17 14:30   항목: 1건
--- 대상 DB에서 실행할 것(USE 문을 넣지 않았다). 이전 값은 원본 DB 기준이다.
-SET XACT_ABORT ON;
-BEGIN TRANSACTION;
-
--- dbo.CUSTOMER.CUST_NO : 고객번호 → 고객 번호
-IF EXISTS (SELECT 1 FROM sys.fn_listextendedproperty(N'MS_Description', N'SCHEMA', N'dbo', N'TABLE', N'CUSTOMER', N'COLUMN', N'CUST_NO'))
-    EXEC sys.sp_updateextendedproperty @name = N'MS_Description', @value = N'고객 번호', ...;
-ELSE
-    EXEC sys.sp_addextendedproperty @name = N'MS_Description', @value = N'고객 번호', ...;
-
-COMMIT TRANSACTION;
-```
-
-- **`USE` 문이 없다.** 실행할 도구에서 대상 DB를 고른 뒤 실행한다.
-- 실행하는 DB에 속성이 있든 없든 끝까지 돈다. 같은 스크립트를 두 번 돌려도 된다.
-- 한 트랜잭션이라 하나라도 실패하면 아무것도 반영되지 않는다.
-- **MariaDB 연결에서는 `ALTER` 문으로 나온다.** 문장마다 바로 커밋되어, 중간에 실패하면 그 앞 문장은 이미 반영되어 있다.
-- 항목마다 위에 `이전 값 → 새 값` 주석이 붙는다. 이전 값은 이 앱이 읽은 DB 기준이다.
-- 연결 문자열과 계정은 파일에 남기지 않는다. 파일은 UTF-8(BOM)이라 SSMS에서 한글이 깨지지 않는다.
-- 스크립트 실행은 저장 충돌 확인과 저장 이력을 거치지 않는다. 받는 쪽은 주석의 이전 값과 대상 DB의 지금 값을 견주어 본 뒤 실행한다.

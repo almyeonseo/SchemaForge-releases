@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 다른 DB·파일과 비교
 
-[목차](README.md) · 이전: [2. 작성률](comments-review.md) · 다음: [2. 이력·스크립트](comments-history.md)
+[목차](README.md) · 이전: [2. 작성률](comments-review.md) · 다음: [2. 저장 이력](comments-history.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -25,9 +25,10 @@
   - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
 - **다른 DB·파일과 비교**
   - [2.13 다른 DB와 비교해 맞추기](#213-다른-db와-비교해-맞추기)
-- **이력·스크립트** ([comments-history.md](comments-history.md))
+- **저장 이력** ([comments-history.md](comments-history.md))
   - [2.14 저장 이력](comments-history.md#214-저장-이력)
-  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-history.md#215-변경분을-sql-스크립트로-내보내기)
+- **변경분 스크립트** ([comments-script.md](comments-script.md))
+  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-script.md#215-변경분을-sql-스크립트로-내보내기)
 
 ## 2.13 다른 DB와 비교해 맞추기
 
@@ -68,7 +69,7 @@
    기준 DB에는 어떤 경우에도 쓰지 않는다. MariaDB는 차례로 저장하고 실패한 곳에서 멈춘다([MariaDB 저장](getting-started-dbms.md#mariadb-저장)).
 5. 저장해도 행은 그 자리에 남는다. `새로고침`을 누르면 두 DB를 다시 읽고, 같아진 행이 빠진다.
 
-- 운영 DB에 직접 저장할 권한이 없으면 4번에서 `저장` 대신 [변경분 스크립트](comments-history.md#215-변경분을-sql-스크립트로-내보내기)를 만들어 DBA에게 넘긴다.
+- 운영 DB에 직접 저장할 권한이 없으면 4번에서 `저장` 대신 [변경분 스크립트](comments-script.md#215-변경분을-sql-스크립트로-내보내기)를 만들어 DBA에게 넘긴다.
 - 어느 한쪽 DB를 읽지 못하면 행을 하나도 보이지 않고 상태줄에 기준·대상 중 어느 쪽인지 알려 준다.
 
 ### 파일과 비교하기

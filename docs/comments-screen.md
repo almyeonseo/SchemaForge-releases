@@ -25,9 +25,10 @@
   - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
 - **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))
   - [2.13 다른 DB와 비교해 맞추기](comments-compare.md#213-다른-db와-비교해-맞추기)
-- **이력·스크립트** ([comments-history.md](comments-history.md))
+- **저장 이력** ([comments-history.md](comments-history.md))
   - [2.14 저장 이력](comments-history.md#214-저장-이력)
-  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-history.md#215-변경분을-sql-스크립트로-내보내기)
+- **변경분 스크립트** ([comments-script.md](comments-script.md))
+  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-script.md#215-변경분을-sql-스크립트로-내보내기)
 
 ## 2.2 편집 화면 열기
 
@@ -105,7 +106,7 @@ SQL Server 테이블 문서에는 `제약조건` 탭이 있다. CHECK·DEFAULT·
 |---|---|---|
 | 왼쪽 | `새로고침` | DB에서 다시 읽는다 |
 | | `저장` | 이 탭의 변경된 항목만 저장한다([2.5절](comments-save.md#25-저장하기)) |
-| | 스크립트 아이콘(`변경분 스크립트`) | 변경된 항목을 DB에 쓰지 않고 SQL 스크립트 파일로 내보낸다([2.15절](comments-history.md#215-변경분을-sql-스크립트로-내보내기)) |
+| | 스크립트 아이콘(`변경분 스크립트`) | 변경된 항목을 DB에 쓰지 않고 SQL 스크립트 파일로 내보낸다([2.15절](comments-script.md#215-변경분을-sql-스크립트로-내보내기)) |
 | | `내보내기` · `가져오기` | 파일로 주고받는다([3장](import-export.md)) |
 | | `변경 항목: N개` | 저장하지 않은 변경 수 |
 | 오른쪽 | `미작성만` · `변경만` · 검색 칸 | 보이는 행을 거른다([2.4절](comments-input.md#24-채울-곳만-보기)) |

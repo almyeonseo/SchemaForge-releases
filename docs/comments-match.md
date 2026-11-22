@@ -25,9 +25,10 @@
   - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
 - **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))
   - [2.13 다른 DB와 비교해 맞추기](comments-compare.md#213-다른-db와-비교해-맞추기)
-- **이력·스크립트** ([comments-history.md](comments-history.md))
+- **저장 이력** ([comments-history.md](comments-history.md))
   - [2.14 저장 이력](comments-history.md#214-저장-이력)
-  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-history.md#215-변경분을-sql-스크립트로-내보내기)
+- **변경분 스크립트** ([comments-script.md](comments-script.md))
+  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-script.md#215-변경분을-sql-스크립트로-내보내기)
 
 ## 2.10 같은 컬럼명 이름 맞추기
 
