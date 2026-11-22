@@ -4,9 +4,10 @@
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
-- **저장 위치와 편집 화면** ([comments.md](comments.md))
+- **코멘트 저장 위치** ([comments.md](comments.md))
   - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
-  - [2.2 편집 화면 열기](comments.md#22-편집-화면-열기)
+- **편집 화면** ([comments-screen.md](comments-screen.md))
+  - [2.2 편집 화면 열기](comments-screen.md#22-편집-화면-열기)
 - **값 입력과 보기** ([comments-input.md](comments-input.md))
   - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
   - [2.4 채울 곳만 보기](comments-input.md#24-채울-곳만-보기)

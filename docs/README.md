@@ -10,7 +10,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [1. 연결 정리와 검색](getting-started-search.md) | 연결 순서 바꾸기, SQL 편집기로 끌어 놓기, 개체·컬럼 검색 |
 | [1. MariaDB·MySQL 연결](getting-started-dbms.md) | MariaDB·MySQL 연결 만들기, 트리, 저장할 수 있는 것, 테이블마다 저장 |
 | [1. PostgreSQL·Oracle 연결](getting-started-postgresql-oracle.md) | PostgreSQL·Oracle 연결 만들기, 트리, 저장 |
-| [2. 코멘트 달기](comments.md) | 코멘트 저장 위치와 구분자, 편집 화면(분류 목록·개체 문서·툴바) |
+| [2. 코멘트 달기](comments.md) | 코멘트가 저장되는 자리와 `이름§설명` 형식, 구분자 바꾸기 |
+| [2. 편집 화면](comments-screen.md) | 분류 목록 문서, 개체 문서(인덱스·제약조건 탭), 툴바 |
 | [2. 값 입력과 보기](comments-input.md) | 이름·설명 입력, 미작성만·변경만 보기 |
 | [2. 저장과 되돌리기](comments-save.md) | 저장과 저장 로그, 저장 충돌, 행 되돌리기 |
 | [2. 붙여넣기와 이름 제안](comments-fill.md) | Excel에서 붙여넣기, 같은 컬럼명의 이름 제안으로 채우기 |
