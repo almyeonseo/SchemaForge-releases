@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 작성률
 
-[목차](README.md) · 이전: [2. 이름 맞추기와 찾아 바꾸기](comments-match.md) · 다음: [2. 다른 DB·파일과 비교](comments-compare.md)
+[목차](README.md) · 이전: [2. 찾아 바꾸기와 설명 편집](comments-replace.md) · 다음: [2. 다른 DB·파일과 비교](comments-compare.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -21,9 +21,10 @@
   - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
 - **이름 제안** ([comments-suggest.md](comments-suggest.md))
   - [2.9 이름 제안으로 채우기](comments-suggest.md#29-이름-제안으로-채우기)
-- **이름 맞추기와 찾아 바꾸기** ([comments-match.md](comments-match.md))
+- **같은 컬럼명 이름 맞추기** ([comments-match.md](comments-match.md))
   - [2.10 같은 컬럼명 이름 맞추기](comments-match.md#210-같은-컬럼명-이름-맞추기)
-  - [2.11 찾아 바꾸기와 설명 편집](comments-match.md#211-찾아-바꾸기와-설명-편집)
+- **찾아 바꾸기와 설명 편집** ([comments-replace.md](comments-replace.md))
+  - [2.11 찾아 바꾸기와 설명 편집](comments-replace.md#211-찾아-바꾸기와-설명-편집)
 - **작성률**
   - [2.12 작성률 보기](#212-작성률-보기)
 - **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))

@@ -1,0 +1,62 @@
+# 2. 코멘트 달기 — 찾아 바꾸기와 설명 편집
+
+[목차](README.md) · 이전: [2. 같은 컬럼명 이름 맞추기](comments-match.md) · 다음: [2. 작성률](comments-review.md)
+
+이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
+
+- **코멘트 저장 위치** ([comments.md](comments.md))
+  - [2.1 코멘트는 어디에 저장되나](comments.md#21-코멘트는-어디에-저장되나)
+- **편집 화면** ([comments-screen.md](comments-screen.md))
+  - [2.2 편집 화면 열기](comments-screen.md#22-편집-화면-열기)
+- **값 입력** ([comments-input.md](comments-input.md))
+  - [2.3 값 입력하기](comments-input.md#23-값-입력하기)
+- **채울 곳만 보기** ([comments-filter.md](comments-filter.md))
+  - [2.4 채울 곳만 보기](comments-filter.md#24-채울-곳만-보기)
+- **저장과 충돌** ([comments-save.md](comments-save.md))
+  - [2.5 저장하기](comments-save.md#25-저장하기)
+  - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
+- **행 되돌리기** ([comments-revert.md](comments-revert.md))
+  - [2.7 행 되돌리기](comments-revert.md#27-행-되돌리기)
+- **Excel에서 붙여넣기** ([comments-fill.md](comments-fill.md))
+  - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
+- **이름 제안** ([comments-suggest.md](comments-suggest.md))
+  - [2.9 이름 제안으로 채우기](comments-suggest.md#29-이름-제안으로-채우기)
+- **같은 컬럼명 이름 맞추기** ([comments-match.md](comments-match.md))
+  - [2.10 같은 컬럼명 이름 맞추기](comments-match.md#210-같은-컬럼명-이름-맞추기)
+- **찾아 바꾸기와 설명 편집**
+  - [2.11 찾아 바꾸기와 설명 편집](#211-찾아-바꾸기와-설명-편집)
+- **작성률** ([comments-review.md](comments-review.md))
+  - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
+- **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))
+  - [2.13 다른 DB와 비교해 맞추기](comments-compare.md#213-다른-db와-비교해-맞추기)
+- **저장 이력** ([comments-history.md](comments-history.md))
+  - [2.14 저장 이력](comments-history.md#214-저장-이력)
+- **변경분 스크립트** ([comments-script.md](comments-script.md))
+  - [2.15 변경분을 SQL 스크립트로 내보내기](comments-script.md#215-변경분을-sql-스크립트로-내보내기)
+
+## 2.11 찾아 바꾸기와 설명 편집
+
+### 찾아 바꾸기
+
+용어를 바꿀 때(`거래처` → `고객`) 행을 하나씩 고치지 않는다.
+
+1. 코멘트 그리드에서 오른쪽 클릭 > `찾아 바꾸기...`(Windows `Ctrl+H` / macOS `Cmd+Option+F`).
+2. 창 위에 `이 그리드에 보이는 N개 행에서 바꿉니다.`가 나온다. **바꾸는 범위는 그 그리드에 지금 보이는 행이다.** 검색·필터로 숨은 행은 바꾸지 않는다.
+3. 찾을 글자와 바꿀 글자를 쓰고, 대상 칸(`이름`·`설명`)을 고른 뒤 `바꾸기`. 바꿀 글자를 비우면 찾은 글자를 지운다.
+4. 상태줄에 `'거래처'을(를) 바꾼 행 N개. 저장해야 DB에 반영됩니다.`가 보인다. 확인한 뒤 `저장`을 누른다.
+
+- 영문 약어(`ID`·`Id`)를 뜻하지 않게 바꾸지 않도록 대소문자를 가린다.
+- 바꾸면 이름에 `§`가 생기거나 길이 한도를 넘는 행은 바꾸지 않고 사유별로 알린다.
+- 잘못 바꾼 행은 [행 되돌리기](comments-revert.md#27-행-되돌리기)로 되돌린다.
+
+### 설명 편집
+
+그리드 칸은 한 줄이라 긴 설명은 보고 고치기 어렵다. 그래서 큰 창에서 여러 줄로 고친다.
+
+1. 코멘트 그리드에서 행 **하나**를 고르고 오른쪽 클릭 > `설명 편집...`(`Shift+F2`). 여럿을 골랐으면 메뉴가 꺼져 있다.
+2. 창 위에 그 행의 이름이, 아래 입력칸에 지금 설명이 들어 있다. `Enter`로 줄을 바꾼다.
+3. `확인`을 누르면 그 행의 설명만 바뀐다. 이름과 합친 길이가 한도를 넘으면 `확인`이 꺼지고 지금 길이와 한도가 보인다. 한도는 연결 종류를 따른다(MariaDB는 글자 수).
+4. 그리드에만 들어가 `변경`으로 표시된다. `저장`을 눌러야 DB에 반영된다.
+
+- 여러 줄 설명은 그리드에서도 줄 수만큼 행이 높아져 보인다.
+- 줄바꿈은 Windows 방식(CRLF)으로 저장하므로 같은 DB를 쓰는 기존 프로그램에서도 줄이 바뀌어 보인다.
