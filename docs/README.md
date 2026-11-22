@@ -16,7 +16,8 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [2. 채울 곳만 보기](comments-filter.md) | 미작성만·변경만 보기 |
 | [2. 저장과 충돌](comments-save.md) | 저장과 저장 로그, 저장 충돌 |
 | [2. 행 되돌리기](comments-revert.md) | 고친 행과 머리글을 불러온 값으로 되돌리기 |
-| [2. 붙여넣기와 이름 제안](comments-fill.md) | Excel에서 붙여넣기, 같은 컬럼명의 이름 제안으로 채우기 |
+| [2. Excel에서 붙여넣기](comments-fill.md) | Excel에서 복사한 이름·설명 열을 그리드에 붙여넣기 |
+| [2. 이름 제안](comments-suggest.md) | 같은 컬럼명에 쓰인 이름 제안으로 채우기 |
 | [2. 이름 맞추기와 찾아 바꾸기](comments-match.md) | 같은 컬럼명 이름 맞추기, 찾아 바꾸기와 설명 편집 |
 | [2. 작성률](comments-review.md) | 작성률과 미작성 개체, 품질 점검·추이, Excel 보고서, 미작성 컬럼 채우기 |
 | [2. 다른 DB·파일과 비교](comments-compare.md) | 다른 DB나 내보낸 파일을 기준으로 다르거나 빈 항목 맞추기 |
