@@ -1,6 +1,6 @@
-# 4. SQL 편집기 — DBMS별 차이
+# 4. SQL 편집기 — MariaDB 연결
 
-[목차](README.md) · 이전: [4. 파일로 저장·지난 탭](sql-editor-files.md) · 다음: [5. 설정·단축키](settings-shortcuts.md)
+[목차](README.md) · 이전: [4. 파일로 저장·지난 탭](sql-editor-files.md) · 다음: [4. PostgreSQL 연결](sql-editor-postgresql.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -24,10 +24,12 @@
   - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
 - **파일로 저장·지난 탭** ([sql-editor-files.md](sql-editor-files.md))
   - [4.10 파일로 저장·지난 탭](sql-editor-files.md#410-파일로-저장지난-탭)
-- **DBMS별 차이**
+- **MariaDB 연결**
   - [4.11 MariaDB 연결](#411-mariadb-연결)
-  - [4.12 PostgreSQL 연결](#412-postgresql-연결)
-  - [4.13 Oracle 연결](#413-oracle-연결)
+- **PostgreSQL 연결** ([sql-editor-postgresql.md](sql-editor-postgresql.md))
+  - [4.12 PostgreSQL 연결](sql-editor-postgresql.md#412-postgresql-연결)
+- **Oracle 연결** ([sql-editor-oracle.md](sql-editor-oracle.md))
+  - [4.13 Oracle 연결](sql-editor-oracle.md#413-oracle-연결)
 
 ## 4.11 MariaDB 연결
 
@@ -70,58 +72,3 @@ MariaDB 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
 
 - OUT·INOUT 파라미터는 사용자 변수(`@이름`)로 받는다. INOUT은 넘기기 전에 `SET @이름 = NULL;`로 값을 둔다.
 - `정의 열기`는 `SHOW CREATE` 결과를 실행할 수 없는 읽기 전용 문서로 연다. 루틴 본문은 그 루틴을 만든 계정만 볼 수 있고, 뷰 정의는 `SHOW VIEW` 권한이 있어야 보인다.
-
-## 4.12 PostgreSQL 연결
-
-PostgreSQL 연결에서도 같은 편집기를 쓴다. 기본은 [4.11](#411-mariadb-연결)처럼 조회만 한다. 다른 점만 적는다.
-
-- 조회 전용 탭에서 쓰기·DDL·`COMMENT`는 서버가 거부하고 `조회 전용 연결이라 쓰기·DDL·COMMENT는 실행하지 않았습니다.`가 보인다.
-- `쓰기 허용`을 켜면 SQL 전체를 트랜잭션으로 감싸 성공하면 커밋, 실패하면 **DDL까지 모두 되돌린다.** SQL 안의 `COMMIT`·`ROLLBACK`이 트랜잭션을 끝냈으면 그 사실을 알린다.
-- `VACUUM`·`CREATE INDEX CONCURRENTLY`처럼 트랜잭션 안에서 쓸 수 없는 문장은 실행하지 않는다.
-- 이름은 큰따옴표(`"스키마"."표"`)로 감싸고, `$$ … $$`·`$body$ … $body$`는 함수 본문 문자열이다. 구문 강조와 괄호 짝이 이 규칙을 따른다.
-- `;`로 이은 여러 문장을 한 번에 보낸다. 오류가 난 줄은 칠하지 않는다.
-- 드라이버가 읽지 못하는 형식(`regclass` 등)은 그 칸만 `::text로 바꿔 조회하세요`라는 안내로 채운다. 배열은 `{1,2}`로 보인다.
-- `상위 1000개 행 선택 ▸ 모든 컬럼 (*)`은 `SELECT * FROM "스키마"."표" LIMIT 1000;`을 채운다.
-
-## 4.13 Oracle 연결
-
-Oracle 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
-
-![Oracle 편집기 — 조회 전용 탭에서 q'[…]' 문자열과 FETCH FIRST를 쓴 조회를 실행한 모습](../images/sql-editor-oracle.png)
-
-### 기본은 조회만 한다
-
-실행할 때마다 세션과 트랜잭션을 함께 읽기 전용으로 건다. `INSERT`·`UPDATE`·`DELETE`, `CREATE`·`DROP` 같은 DDL, SQL 안의 `COMMIT`까지 서버가 거부하고
-메시지 탭에 `조회 전용 연결이라 쓰기·DDL·COMMIT은 실행하지 않았습니다.`가 보인다. 쓰기가 들어 있는 프로시저를 실행해도 같다. 실행 전 규모 확인은 없다.
-
-### 쓰기 허용
-
-탭 툴바의 `쓰기 허용`을 켜면 그 탭에서 쓰기와 DDL을 실행한다. 성공하면 커밋하고 실패·중단하면 롤백한다.
-**DDL과 SQL 안의 `COMMIT`은 그 앞의 쓰기까지 바로 반영한다.** 그 뒤에 실패하면 앞부분은 되돌릴 수 없고 메시지 탭에 그 사실을 알린다.
-
-### 여러 문장과 PL/SQL 블록
-
-- `;`로 이은 여러 문장을 차례로 실행하고 결과 집합마다 결과 탭이 생긴다.
-- `DECLARE`·`BEGIN`이나 `CREATE OR REPLACE PROCEDURE·FUNCTION·PACKAGE·TRIGGER`로 시작하는 블록은 `/`만 있는 줄까지 한 문장이다. 본문 안의 `;`에서 끊지 않는다.
-- 문장이 실패하면 그 문장의 첫 줄을 칠한다.
-
-### 문법
-
-- 이름은 큰따옴표(`"SCHEMA"."TABLE"`)로 감싸고, `V$SESSION`처럼 `$`·`#`가 든 이름도 한 이름으로 읽는다.
-- 문자열은 작은따옴표이고 `q'[…]'` 같은 대체 따옴표도 쓴다. 역슬래시는 이스케이프가 아니다.
-- `--`·`/* */`가 주석이다. 구문 강조, 괄호 짝, 접기가 이 규칙을 따른다.
-
-### 결과 칸
-
-- 28자리를 넘는 수(`1/3` 같은 계산 값 포함)는 서버 값 그대로의 글자로 보인다. 엑셀로 저장하면 그 칸은 글자로 들어간다.
-- `INTERVAL YEAR TO MONTH`는 `+01-02`처럼 보인다.
-- 기원전 날짜, 컬렉션·객체 타입, `BFILE`은 그 칸만 `(읽을 수 없는 형식 …: TO_CHAR 등으로 바꿔 조회하세요)`로 채우고 나머지는 보인다.
-- `DBMS_OUTPUT` 메시지는 보이지 않는다.
-
-### 트리에서 채우는 문장
-
-| 메뉴 | 채워지는 모양 |
-|---|---|
-| `상위 1000개 행 선택 ▸ 모든 컬럼 (*)` | `SELECT * FROM "스키마"."표" FETCH FIRST 1000 ROWS ONLY;` |
-| `실행문 만들기`(프로시저) | `BEGIN "스키마"."이름"(인자 => NULL, …); END;` 블록. OUT·IN OUT 인자는 `DECLARE`한 변수로 넘긴다 |
-| `실행문 만들기`(함수) | `SELECT "스키마"."이름"(인자 => NULL) FROM DUAL;` |

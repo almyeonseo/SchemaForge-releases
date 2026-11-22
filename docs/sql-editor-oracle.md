@@ -1,0 +1,75 @@
+# 4. SQL 편집기 — Oracle 연결
+
+[목차](README.md) · 이전: [4. PostgreSQL 연결](sql-editor-postgresql.md) · 다음: [5. 설정·단축키](settings-shortcuts.md)
+
+이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
+
+- **열기** ([sql-editor.md](sql-editor.md))
+  - [4.1 열기](sql-editor.md#41-열기)
+- **실행하기** ([sql-editor-run.md](sql-editor-run.md))
+  - [4.2 실행하기](sql-editor-run.md#42-실행하기)
+- **예상 규모** ([sql-editor-estimate.md](sql-editor-estimate.md))
+  - [4.3 예상 규모 줄](sql-editor-estimate.md#43-예상-규모-줄)
+- **결과 보기** ([sql-editor-results.md](sql-editor-results.md))
+  - [4.4 결과 보기](sql-editor-results.md#44-결과-보기)
+- **결과 다루기** ([sql-editor-handling.md](sql-editor-handling.md))
+  - [4.5 결과 다루기](sql-editor-handling.md#45-결과-다루기)
+- **정렬·거르기·열 정리** ([sql-editor-arrange.md](sql-editor-arrange.md))
+  - [4.6 정렬·거르기·열 정리](sql-editor-arrange.md#46-정렬거르기열-정리)
+- **결과 저장** ([sql-editor-save.md](sql-editor-save.md))
+  - [4.7 결과 저장](sql-editor-save.md#47-결과-저장)
+- **편집 기능** ([sql-editor-editing.md](sql-editor-editing.md))
+  - [4.8 편집 기능](sql-editor-editing.md#48-편집-기능)
+- **개체와 코멘트 연결** ([sql-editor-objects.md](sql-editor-objects.md))
+  - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
+- **파일로 저장·지난 탭** ([sql-editor-files.md](sql-editor-files.md))
+  - [4.10 파일로 저장·지난 탭](sql-editor-files.md#410-파일로-저장지난-탭)
+- **MariaDB 연결** ([sql-editor-dbms.md](sql-editor-dbms.md))
+  - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
+- **PostgreSQL 연결** ([sql-editor-postgresql.md](sql-editor-postgresql.md))
+  - [4.12 PostgreSQL 연결](sql-editor-postgresql.md#412-postgresql-연결)
+- **Oracle 연결**
+  - [4.13 Oracle 연결](#413-oracle-연결)
+
+## 4.13 Oracle 연결
+
+Oracle 연결에서도 같은 편집기를 쓴다. 다른 점만 적는다.
+
+![Oracle 편집기 — 조회 전용 탭에서 q'[…]' 문자열과 FETCH FIRST를 쓴 조회를 실행한 모습](../images/sql-editor-oracle.png)
+
+### 기본은 조회만 한다
+
+실행할 때마다 세션과 트랜잭션을 함께 읽기 전용으로 건다. `INSERT`·`UPDATE`·`DELETE`, `CREATE`·`DROP` 같은 DDL, SQL 안의 `COMMIT`까지 서버가 거부하고
+메시지 탭에 `조회 전용 연결이라 쓰기·DDL·COMMIT은 실행하지 않았습니다.`가 보인다. 쓰기가 들어 있는 프로시저를 실행해도 같다. 실행 전 규모 확인은 없다.
+
+### 쓰기 허용
+
+탭 툴바의 `쓰기 허용`을 켜면 그 탭에서 쓰기와 DDL을 실행한다. 성공하면 커밋하고 실패·중단하면 롤백한다.
+**DDL과 SQL 안의 `COMMIT`은 그 앞의 쓰기까지 바로 반영한다.** 그 뒤에 실패하면 앞부분은 되돌릴 수 없고 메시지 탭에 그 사실을 알린다.
+
+### 여러 문장과 PL/SQL 블록
+
+- `;`로 이은 여러 문장을 차례로 실행하고 결과 집합마다 결과 탭이 생긴다.
+- `DECLARE`·`BEGIN`이나 `CREATE OR REPLACE PROCEDURE·FUNCTION·PACKAGE·TRIGGER`로 시작하는 블록은 `/`만 있는 줄까지 한 문장이다. 본문 안의 `;`에서 끊지 않는다.
+- 문장이 실패하면 그 문장의 첫 줄을 칠한다.
+
+### 문법
+
+- 이름은 큰따옴표(`"SCHEMA"."TABLE"`)로 감싸고, `V$SESSION`처럼 `$`·`#`가 든 이름도 한 이름으로 읽는다.
+- 문자열은 작은따옴표이고 `q'[…]'` 같은 대체 따옴표도 쓴다. 역슬래시는 이스케이프가 아니다.
+- `--`·`/* */`가 주석이다. 구문 강조, 괄호 짝, 접기가 이 규칙을 따른다.
+
+### 결과 칸
+
+- 28자리를 넘는 수(`1/3` 같은 계산 값 포함)는 서버 값 그대로의 글자로 보인다. 엑셀로 저장하면 그 칸은 글자로 들어간다.
+- `INTERVAL YEAR TO MONTH`는 `+01-02`처럼 보인다.
+- 기원전 날짜, 컬렉션·객체 타입, `BFILE`은 그 칸만 `(읽을 수 없는 형식 …: TO_CHAR 등으로 바꿔 조회하세요)`로 채우고 나머지는 보인다.
+- `DBMS_OUTPUT` 메시지는 보이지 않는다.
+
+### 트리에서 채우는 문장
+
+| 메뉴 | 채워지는 모양 |
+|---|---|
+| `상위 1000개 행 선택 ▸ 모든 컬럼 (*)` | `SELECT * FROM "스키마"."표" FETCH FIRST 1000 ROWS ONLY;` |
+| `실행문 만들기`(프로시저) | `BEGIN "스키마"."이름"(인자 => NULL, …); END;` 블록. OUT·IN OUT 인자는 `DECLARE`한 변수로 넘긴다 |
+| `실행문 만들기`(함수) | `SELECT "스키마"."이름"(인자 => NULL) FROM DUAL;` |

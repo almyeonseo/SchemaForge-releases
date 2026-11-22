@@ -38,7 +38,9 @@ SchemaForge로 MS SQL Server·MariaDB·MySQL·PostgreSQL·Oracle 개체에 이�
 | [4. 편집 기능](sql-editor-editing.md) | 찾기·바꾸기, 세로 선택, 주석 처리, 책갈피, 코드 접기 등 |
 | [4. 개체와 코멘트 연결](sql-editor-objects.md) | 이름 툴팁, 코멘트 문서 열기, 정의 열기, 실행문 만들기 |
 | [4. 파일로 저장·지난 탭](sql-editor-files.md) | 쿼리 파일 열기·저장, 앱을 켤 때 지난 탭 다시 열기 |
-| [4. DBMS별 차이](sql-editor-dbms.md) | MariaDB·MySQL·PostgreSQL·Oracle 연결의 조회 전용과 쓰기 허용 |
+| [4. MariaDB 연결](sql-editor-dbms.md) | MariaDB·MySQL 편집기의 조회 전용, 쓰기 허용, 문법 |
+| [4. PostgreSQL 연결](sql-editor-postgresql.md) | PostgreSQL 편집기의 조회 전용과 쓰기 허용 |
+| [4. Oracle 연결](sql-editor-oracle.md) | Oracle 편집기의 조회 전용, 쓰기 허용, PL/SQL 블록, 결과 칸 |
 | [5. 설정과 단축키](settings-shortcuts.md) | 설정 창(테마, 화면·코드 글꼴과 글자 크기 등), Windows·macOS 단축키 표 |
 | [6. 문제 해결](troubleshooting.md) | 연결·인증서·권한 문제, DB 탐색기 문제 |
 | [6. 저장과 SQL 편집기](troubleshooting-editing.md) | 저장되지 않을 때, 붙여넣기·저장 이력, SQL 편집기 실행 문제 |

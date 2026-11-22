@@ -1,6 +1,6 @@
 # 5. 설정과 단축키
 
-[목차](README.md) · 이전: [4. SQL 편집기 — DBMS별 차이](sql-editor-dbms.md) · 다음: [6. 문제 해결](troubleshooting.md)
+[목차](README.md) · 이전: [4. Oracle 연결](sql-editor-oracle.md) · 다음: [6. 문제 해결](troubleshooting.md)
 
 ## 5.1 설정
 

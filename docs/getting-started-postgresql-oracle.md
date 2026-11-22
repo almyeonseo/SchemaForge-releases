@@ -20,7 +20,7 @@
 ## 1.8 PostgreSQL 연결
 
 PostgreSQL 17에 연결한다. 코멘트는 같은 `이름§설명` 형식으로 `COMMENT ON`에 저장한다. 트리와 코멘트 문서는 SQL Server와 같고
-SQL 편집기는 MariaDB처럼 기본으로 조회만 한다([4.12](sql-editor-dbms.md#412-postgresql-연결)).
+SQL 편집기는 MariaDB처럼 기본으로 조회만 한다([4.12](sql-editor-postgresql.md#412-postgresql-연결)).
 
 ### 연결 만들기
 

@@ -6,7 +6,7 @@
 대량 변경이나 마이그레이션 스크립트에는 그 DBMS의 전용 도구를 쓴다.
 
 4.1~4.10은 MS SQL Server 연결 기준으로 적었다. MariaDB 연결에서 다른 곳에는 그 자리에 표시해 두었고, 조회 전용과 쓰기 허용은 [4.11](sql-editor-dbms.md#411-mariadb-연결)(MySQL도 같다),
-[4.12](sql-editor-dbms.md#412-postgresql-연결)(PostgreSQL), [4.13](sql-editor-dbms.md#413-oracle-연결)(Oracle)에 모았다.
+[4.12](sql-editor-postgresql.md#412-postgresql-연결)(PostgreSQL), [4.13](sql-editor-oracle.md#413-oracle-연결)(Oracle)에 모았다.
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -30,10 +30,12 @@
   - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
 - **파일로 저장·지난 탭** ([sql-editor-files.md](sql-editor-files.md))
   - [4.10 파일로 저장·지난 탭](sql-editor-files.md#410-파일로-저장지난-탭)
-- **DBMS별 차이** ([sql-editor-dbms.md](sql-editor-dbms.md))
+- **MariaDB 연결** ([sql-editor-dbms.md](sql-editor-dbms.md))
   - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
-  - [4.12 PostgreSQL 연결](sql-editor-dbms.md#412-postgresql-연결)
-  - [4.13 Oracle 연결](sql-editor-dbms.md#413-oracle-연결)
+- **PostgreSQL 연결** ([sql-editor-postgresql.md](sql-editor-postgresql.md))
+  - [4.12 PostgreSQL 연결](sql-editor-postgresql.md#412-postgresql-연결)
+- **Oracle 연결** ([sql-editor-oracle.md](sql-editor-oracle.md))
+  - [4.13 Oracle 연결](sql-editor-oracle.md#413-oracle-연결)
 
 ## 4.1 열기
 

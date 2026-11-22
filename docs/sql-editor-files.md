@@ -1,6 +1,6 @@
 # 4. SQL 편집기 — 파일로 저장·지난 탭
 
-[목차](README.md) · 이전: [4. 개체와 코멘트 연결](sql-editor-objects.md) · 다음: [4. DBMS별 차이](sql-editor-dbms.md)
+[목차](README.md) · 이전: [4. 개체와 코멘트 연결](sql-editor-objects.md) · 다음: [4. MariaDB 연결](sql-editor-dbms.md)
 
 이 장의 단축키는 Windows·Linux 기준으로 적고 괄호에 macOS 키를 붙인다. 전체 표는 [5.2 단축키](settings-shortcuts.md#52-단축키)에 있다.
 
@@ -24,10 +24,12 @@
   - [4.9 개체와 코멘트 연결](sql-editor-objects.md#49-개체와-코멘트-연결)
 - **파일로 저장·지난 탭**
   - [4.10 파일로 저장·지난 탭](#410-파일로-저장지난-탭)
-- **DBMS별 차이** ([sql-editor-dbms.md](sql-editor-dbms.md))
+- **MariaDB 연결** ([sql-editor-dbms.md](sql-editor-dbms.md))
   - [4.11 MariaDB 연결](sql-editor-dbms.md#411-mariadb-연결)
-  - [4.12 PostgreSQL 연결](sql-editor-dbms.md#412-postgresql-연결)
-  - [4.13 Oracle 연결](sql-editor-dbms.md#413-oracle-연결)
+- **PostgreSQL 연결** ([sql-editor-postgresql.md](sql-editor-postgresql.md))
+  - [4.12 PostgreSQL 연결](sql-editor-postgresql.md#412-postgresql-연결)
+- **Oracle 연결** ([sql-editor-oracle.md](sql-editor-oracle.md))
+  - [4.13 Oracle 연결](sql-editor-oracle.md#413-oracle-연결)
 
 ## 4.10 파일로 저장·지난 탭
 
