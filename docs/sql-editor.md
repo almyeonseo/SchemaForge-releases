@@ -1,6 +1,6 @@
 # 4. SQL 편집기
 
-[목차](README.md) · 이전: [3. 파일로 주고받기](import-export.md) · 다음: [4. 실행과 예상 규모](sql-editor-run.md)
+[목차](README.md) · 이전: [3. 정의서 내보내기](definition-export.md) · 다음: [4. 실행과 예상 규모](sql-editor-run.md)
 
 고른 연결에 SQL을 실행하고 결과를 표로 본다. 데이터를 확인하거나 조금 고칠 때 쓴다.
 대량 변경이나 마이그레이션 스크립트에는 그 DBMS의 전용 도구를 쓴다.
