@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 저장과 되돌리기
 
-[목차](README.md) · 이전: [2. 값 입력과 보기](comments-input.md) · 다음: [2. 여러 행 한꺼번에 채우기](comments-fill.md)
+[목차](README.md) · 이전: [2. 값 입력과 보기](comments-input.md) · 다음: [2. 붙여넣기와 이름 제안](comments-fill.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -14,11 +14,12 @@
   - [2.5 저장하기](#25-저장하기)
   - [2.6 저장 충돌](#26-저장-충돌)
   - [2.7 행 되돌리기](#27-행-되돌리기)
-- **여러 행 한꺼번에 채우기** ([comments-fill.md](comments-fill.md))
+- **붙여넣기와 이름 제안** ([comments-fill.md](comments-fill.md))
   - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
   - [2.9 이름 제안으로 채우기](comments-fill.md#29-이름-제안으로-채우기)
-  - [2.10 같은 컬럼명 이름 맞추기](comments-fill.md#210-같은-컬럼명-이름-맞추기)
-  - [2.11 찾아 바꾸기와 설명 편집](comments-fill.md#211-찾아-바꾸기와-설명-편집)
+- **이름 맞추기와 찾아 바꾸기** ([comments-match.md](comments-match.md))
+  - [2.10 같은 컬럼명 이름 맞추기](comments-match.md#210-같은-컬럼명-이름-맞추기)
+  - [2.11 찾아 바꾸기와 설명 편집](comments-match.md#211-찾아-바꾸기와-설명-편집)
 - **작성률** ([comments-review.md](comments-review.md))
   - [2.12 작성률 보기](comments-review.md#212-작성률-보기)
 - **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))

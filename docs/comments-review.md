@@ -1,6 +1,6 @@
 # 2. 코멘트 달기 — 작성률
 
-[목차](README.md) · 이전: [2. 여러 행 한꺼번에 채우기](comments-fill.md) · 다음: [2. 다른 DB·파일과 비교](comments-compare.md)
+[목차](README.md) · 이전: [2. 이름 맞추기와 찾아 바꾸기](comments-match.md) · 다음: [2. 다른 DB·파일과 비교](comments-compare.md)
 
 이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.6](getting-started-dbms.md#16-mariadb-연결)~[1.9](getting-started-postgresql-oracle.md#19-oracle-연결)에 모아 두었다.
 
@@ -14,11 +14,12 @@
   - [2.5 저장하기](comments-save.md#25-저장하기)
   - [2.6 저장 충돌](comments-save.md#26-저장-충돌)
   - [2.7 행 되돌리기](comments-save.md#27-행-되돌리기)
-- **여러 행 한꺼번에 채우기** ([comments-fill.md](comments-fill.md))
+- **붙여넣기와 이름 제안** ([comments-fill.md](comments-fill.md))
   - [2.8 Excel에서 붙여넣기](comments-fill.md#28-excel에서-붙여넣기)
   - [2.9 이름 제안으로 채우기](comments-fill.md#29-이름-제안으로-채우기)
-  - [2.10 같은 컬럼명 이름 맞추기](comments-fill.md#210-같은-컬럼명-이름-맞추기)
-  - [2.11 찾아 바꾸기와 설명 편집](comments-fill.md#211-찾아-바꾸기와-설명-편집)
+- **이름 맞추기와 찾아 바꾸기** ([comments-match.md](comments-match.md))
+  - [2.10 같은 컬럼명 이름 맞추기](comments-match.md#210-같은-컬럼명-이름-맞추기)
+  - [2.11 찾아 바꾸기와 설명 편집](comments-match.md#211-찾아-바꾸기와-설명-편집)
 - **작성률**
   - [2.12 작성률 보기](#212-작성률-보기)
 - **다른 DB·파일과 비교** ([comments-compare.md](comments-compare.md))
@@ -64,7 +65,7 @@ DB 탐색기에서 DB 노드 오른쪽 클릭 > `작성률 보기`. 탭 이름�
 
 - 칸은 `컬럼명 · 테이블 수 · 갈래 · 이름(많은 순) · 미작성`이다. 갈래가 많은 순으로 보인다.
 - 뷰 컬럼은 세지 않는다. 뷰 컬럼이 테이블 값을 그대로 내보내면 같은 이름을 겹쳐 세게 되기 때문이다.
-- 줄을 더블클릭하거나 `Enter`를 누르면 그 이름의 [같은 컬럼명 문서](comments-fill.md#210-같은-컬럼명-이름-맞추기)가 열린다. 거기서 맞추고 저장하면
+- 줄을 더블클릭하거나 `Enter`를 누르면 그 이름의 [같은 컬럼명 문서](comments-match.md#210-같은-컬럼명-이름-맞추기)가 열린다. 거기서 맞추고 저장하면
   이 목록에서 그 줄이 빠진다.
 
 **컬럼명이 갈린 이름** — 목록 위 줄에서 `컬럼명이 갈린 이름 (N)`을 고르면, 같은 이름이 서로 다른 컬럼 이름에 붙은 곳(예: `등록일시`가
