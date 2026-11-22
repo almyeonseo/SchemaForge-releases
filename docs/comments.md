@@ -1,8 +1,8 @@
 # 2. 코멘트 달기
 
-[목차](README.md) · 이전: [1. 시작하기](getting-started.md) · 다음: [2. 여러 행 한꺼번에 채우기](comments-fill.md)
+[목차](README.md) · 이전: [1. DBMS별 연결](getting-started-dbms.md) · 다음: [2. 여러 행 한꺼번에 채우기](comments-fill.md)
 
-이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started.md#15-mariadb-연결)~[1.8](getting-started.md#18-oracle-연결)에 모아 두었다.
+이 장은 SchemaForge 1.13.0 기준이다. MariaDB·MySQL·PostgreSQL·Oracle 연결에서 달라지는 점은 [1.5](getting-started-dbms.md#15-mariadb-연결)~[1.8](getting-started-dbms.md#18-oracle-연결)에 모아 두었다.
 
 - **기본**
   - [2.1 코멘트는 어디에 저장되나](#21-코멘트는-어디에-저장되나)
@@ -163,7 +163,7 @@ SQL Server 테이블 문서에는 `제약조건` 탭이 있다. CHECK·DEFAULT·
 ### 지킬 것
 
 - **이름에는 `§`(그 연결의 코멘트 구분자)를 넣을 수 없다.** 이름과 설명을 가르는 문자라서다. 설명에는 넣어도 된다.
-- 이름과 설명을 합쳐 **7,500바이트(한글 약 3,750자)**를 넘으면 저장하지 않는다. MariaDB는 한도가 다르고 글자 수로 센다([1.5 MariaDB 연결](getting-started.md#15-mariadb-연결)).
+- 이름과 설명을 합쳐 **7,500바이트(한글 약 3,750자)**를 넘으면 저장하지 않는다. MariaDB는 한도가 다르고 글자 수로 센다([1.5 MariaDB 연결](getting-started-dbms.md#15-mariadb-연결)).
 - 이름과 설명을 모두 비우고 저장하면 그 개체의 코멘트를 지운다.
 
 위반한 값이 있으면 저장을 시작하지 않고 상태줄에 `저장 취소: …`로 어느 항목이 문제인지 알려 준다. 하나라도 걸리면 아무것도 저장하지 않는다.
@@ -206,7 +206,7 @@ SQL Server 테이블 문서에는 `제약조건` 탭이 있다. CHECK·DEFAULT·
 | **저장** `Ctrl+S`(macOS는 `Cmd+S`) — 문서 툴바, 파일 메뉴, 메인 툴바 | 지금 탭의 변경된 항목만 |
 | **모두 저장** `Ctrl+Shift+S`(macOS는 `Cmd+Shift+S`) | 열려 있는 탭 중 변경이 있는 것 전부. DB 전체가 아니다 |
 
-변경된 항목만 하나의 트랜잭션으로 저장한다. 하나가 실패하면 그 문서의 저장은 모두 취소된다(MariaDB는 다르다 — [1.5](getting-started.md#mariadb-저장)). 저장이
+변경된 항목만 하나의 트랜잭션으로 저장한다. 하나가 실패하면 그 문서의 저장은 모두 취소된다(MariaDB는 다르다 — [1.5](getting-started-dbms.md#mariadb-저장)). 저장이
 끝나면 상태줄에 `성공적으로 N개 코멘트가 저장되었습니다.`가 보이고 DB 탐색기의 이름도 바뀐다. 저장에 실패하면 상태줄 문구가 빨간 글자로
 바뀌고 다른 문구가 들어오면 원래 색으로 돌아온다. `§`나 길이 때문에 저장을 시작하지 않은 안내는 빨갛지 않다.
 

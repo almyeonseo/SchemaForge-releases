@@ -58,10 +58,10 @@ MariaDB·MySQL은 개체의 `COMMENT`, PostgreSQL·Oracle은 `COMMENT ON`이다.
 - 정의서 내보내기, 작성률, 저장 이력, 다른 DB·파일과 비교, 변경분 스크립트, CSV·Excel 주고받기는 다섯 DBMS에서 모두 된다.
 - 조회 전용 편집기는 탭의 `쓰기 허용`을 켜면 쓴다. SQL Server만 실행 전에 `규모 확인`으로 예상 영향 규모를 본다.
 - 연결 설정과 필요한 권한은 설명서에 DBMS마다 있다:
-  [MariaDB](docs/getting-started.md#15-mariadb-연결) ·
-  [MySQL](docs/getting-started.md#16-mysql-연결) ·
-  [PostgreSQL](docs/getting-started.md#17-postgresql-연결) ·
-  [Oracle](docs/getting-started.md#18-oracle-연결)
+  [MariaDB](docs/getting-started-dbms.md#15-mariadb-연결) ·
+  [MySQL](docs/getting-started-dbms.md#16-mysql-연결) ·
+  [PostgreSQL](docs/getting-started-dbms.md#17-postgresql-연결) ·
+  [Oracle](docs/getting-started-dbms.md#18-oracle-연결)
 
 ---
 
